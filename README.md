@@ -1,4 +1,4 @@
-# foliage-api
-REST API for foliage.com
+# foliage
+Softwareasuwahl- und anpassung
 
 # TODO
