@@ -1,6 +1,5 @@
 # foliage
 Softwareasuwahl- und anpassung
 
-# TODO
--
-Sourcecode verwaltung
+# Source code verwaltung
+TODO
