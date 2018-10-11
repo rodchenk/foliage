@@ -20,7 +20,5 @@ Teammitglieder ->
 	Nikita Ivachshenko ->  Protokollfuehrer, Sprecher
 	
 	Ornella -> Mitarbeiterin
-	
-	Arsene -> Mitarbeiter
-	
+		
 	Dennis -> Mitarbeiter
