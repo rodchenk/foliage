@@ -22,3 +22,5 @@ Teammitglieder ->
 	Ornella -> Mitarbeiterin
 	
 	Arsene -> Mitarbeiter
+	
+	Dennis -> Mitarbeiter
