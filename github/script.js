@@ -1,15 +1,10 @@
 $(window).ready(function(){
-	$('#arrow').on('click', function(){
-		$('html,body').animate({
-	        scrollTop: $("#explore-content").offset().top
-	    }, 'slow');
-	});
-	$('#start').on('click', function(){
-		scrollToDiv('content');
-		// $('html,body').animate({
-	 //        scrollTop: $("#get-started").offset().top
-	 //    }, 'slow');
-	});
+	$('#arrow').on('click', function(){ scrollToDiv('explore-content');});
+
+	$('#start').on('click', function(){scrollToDiv('content');});
+
+	$('#security').on('click', function(){scrollToDiv('security-block');});
+
 	$('#github-top').on('click', function(){
 		window.location ='https://github.com/rodchenk/foliage-api';
 	});
