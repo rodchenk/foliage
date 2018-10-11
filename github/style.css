@@ -221,3 +221,11 @@ body{
 	filter: brightness(100);
 	margin-right: 0;
 }
+
+#security-block{
+	height: 100vh;
+	background-color: red;
+	background-image: url(secblock.png);
+	filter: brightness(0.4);
+	background-attachment: fixed;
+}
