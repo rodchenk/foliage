@@ -9,7 +9,7 @@ TODO
 
 Thema -> 
 
-	OAuth2 und Autorisierungs- und Authentificationsmodule in SOA am Beispiel
+	OAuth2 und Autorisierungs- und Authentificationsmodule in SOA am Beispiel von einem StartUp
 	
 	Verschluesselungskonzepte der Benutzerdaten in Entwicklungspfase (im StartUp)
 
