@@ -4,6 +4,17 @@ body{
 	margin: 0;
 	padding: 0;
 }
+a{
+	text-decoration: none;
+	color: #283056;
+}
+a:hover{
+	color: #9c2f2f;
+}
+::selection{
+	color: white;
+	background-color: black;
+}
 #top-head{
 	position: relative;
 	height: 400px;
@@ -71,6 +82,7 @@ body{
 	padding-left: 15px;
 	display: inline-block;
 	font-size: 15px;
+	font-weight: bold;
 }
 .content-block>span.last-updated{
 	font-size: 12px;
