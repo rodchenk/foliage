@@ -418,7 +418,6 @@ a:hover{
 	background-position: left bottom;
 	position: relative;
 }
-/*----------------*/
 .btn-liquid {
 	display: inline-block;
 	position: relative;
@@ -444,7 +443,6 @@ a:hover{
 	left: -50px;
 	z-index: 1;
 }
-/*--------------------*/
 .content-block>img{
 	max-height: 500px;
 	max-width: 600px;
