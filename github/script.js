@@ -280,8 +280,4 @@ $(function() {
 
 	// Init
 	initButton();
-<<<<<<< HEAD
 });
-=======
-});
->>>>>>> f7c8c13fbec62699dc0977c519fac37680af242c
