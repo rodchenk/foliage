@@ -3,7 +3,11 @@ body{
 	font-family: 'Quicksand', sans-serif;
 	margin: 0;
 	padding: 0;
+<<<<<<< HEAD
 }
+=======
+} 
+>>>>>>> f7c8c13fbec62699dc0977c519fac37680af242c
 a{
 	text-decoration: none;
 	color: #283056;
@@ -99,8 +103,13 @@ a:hover{
 	margin-bottom: 15px;
 	margin-top: 15px;
 }
+<<<<<<< HEAD
 .menu>span.ready::before,
 .menu>span.in-progress::before,
+=======
+.menu>span.in-progress::before,
+.menu>span.ready::before,
+>>>>>>> f7c8c13fbec62699dc0977c519fac37680af242c
 .menu>span.not-ready::before{
 	content: "";
 	width: 7px;
@@ -121,10 +130,13 @@ a:hover{
 	position: absolute;
 	right: 0;
 }
+<<<<<<< HEAD
 .menu>span.in-progress::before{
 	filter: drop-shadow(0 0 5px #e4c455);
 	background-color: #e4c455;
 }
+=======
+>>>>>>> f7c8c13fbec62699dc0977c519fac37680af242c
 .menu>span.not-ready::before{
 	filter: drop-shadow(0 0 5px #e45555);
 	background-color: #e45555;
@@ -133,6 +145,13 @@ a:hover{
 	background-color: #69c169;
 	filter: drop-shadow(0 0 5px #69c169);
 }
+<<<<<<< HEAD
+=======
+.menu>span.in-progress::before{
+	background-color: #e4d155;
+	filter: drop-shadow(0 0 5px #e4d155);
+}
+>>>>>>> f7c8c13fbec62699dc0977c519fac37680af242c
 .topic-module>a{
 	color: #9595da;
 	font-size: 14px;
@@ -418,7 +437,10 @@ a:hover{
 	background-position: left bottom;
 	position: relative;
 }
+<<<<<<< HEAD
 /*----------------*/
+=======
+>>>>>>> f7c8c13fbec62699dc0977c519fac37680af242c
 .btn-liquid {
 	display: inline-block;
 	position: relative;
@@ -444,4 +466,17 @@ a:hover{
 	left: -50px;
 	z-index: 1;
 }
+<<<<<<< HEAD
 /*--------------------*/
+=======
+.content-block>img{
+	max-height: 500px;
+	max-width: 600px;
+	display: block;
+	margin: auto;
+}
+.content-block>a:not(.content-theme){
+	color: blue;
+}
+/* 16.10.2018 */
+>>>>>>> f7c8c13fbec62699dc0977c519fac37680af242c
