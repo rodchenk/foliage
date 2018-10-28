@@ -28,7 +28,7 @@ a:hover{
 	width: 100%;
 	min-height: 100vh;
 	display: grid;
-	grid-template-columns: [menu]335px [padding]20px [content]auto;
+	grid-template-columns: [menu]335px [padding]20px [content]auto [padding]50px;
 	border-bottom: 3px #1a1a1a solid;
 }
 .module-block:last-child{
@@ -104,6 +104,12 @@ a:hover{
 	text-align: center;
 	margin-bottom: 15px;
 	margin-top: 15px;
+	position: sticky;
+	top: 0;
+	padding: 5px;
+	border-radius: 3px;
+	border: 1px #d2d2d2 solid;
+	background-color: #4b57a9;
 }
 .menu>span.in-progress::before,
 .menu>span.ready::before,
