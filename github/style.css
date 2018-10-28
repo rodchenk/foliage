@@ -28,7 +28,7 @@ a:hover{
 	width: 100%;
 	min-height: 100vh;
 	display: grid;
-	grid-template-columns: [menu]300px [padding]20px [content]auto;
+	grid-template-columns: [menu]335px [padding]20px [content]auto;
 	border-bottom: 3px #1a1a1a solid;
 }
 .module-block:last-child{
@@ -53,11 +53,16 @@ a:hover{
 	font-size: 14px;
 	line-height: 25px;
 }
-.menu{
+.menu-wrap{
 	grid-column: menu;
 	grid-row-start: 1;
 	grid-row-end: 999;
 	background-color: rgb(26,26,26);
+	position: relative;
+}
+.menu{
+	position: sticky;
+	top: 0;
 }
 .menu>.menu-topic{
 	width: 100%;
@@ -146,6 +151,11 @@ a:hover{
 	transition: color 500ms;
 	position: relative;
 }
+.menu>span.under-p{
+	margin-left: 20px;
+	font-size: 12px;
+}
+.menu>span>a{ color: inherit; }
 .menu>span:hover{
 	color: #e36e91;
 	cursor: pointer;
@@ -449,7 +459,14 @@ a:hover{
 	display: block;
 	margin: auto;
 }
+.content-block>img.content-img-l{
+	max-height: 900px;
+	max-width: 900px;
+	display: block;
+	margin: auto;
+}
 .content-block>a:not(.content-theme){
 	color: blue;
 }
+
 /* 16.10.2018 */
