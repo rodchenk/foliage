@@ -98,7 +98,7 @@ a:hover{
 }
 .topic-module{
 	grid-column: content;
-	color: white;
+	color: black;
 	font-size: 18px;
 	font-weight: bold;
 	text-align: center;
@@ -110,7 +110,7 @@ a:hover{
 	padding: 5px;
 	border-radius: 3px;
 	border: 1px #d2d2d2 solid;
-	background-color: #4b57a9;
+	background-color: #e4e4e4;
 }
 .menu>span.in-progress::before,
 .menu>span.ready::before,
