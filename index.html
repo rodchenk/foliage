@@ -281,7 +281,7 @@
 					<span onclick="scrollToDiv('architektur-content')" class="ready">
 						Architekturkonzept
 					</span>
-					<span onclick="scrollToDiv('oauth-content')" class="not-ready">
+					<span onclick="scrollToDiv('oauth-content')" class="in-progress">
 						OAuth 2.0
 					</span>
 				</div>
@@ -354,7 +354,16 @@
 				<span class="content-theme">
 					<label>OAuth 2.0</label>
 				</span>
-				TODO
+				OAuth 2 ist ein Autorisierungsframework, mit dem eingeschränkten Zugriff auf Benutzerkonten in HTTP-Diensten gewährleistet wird. OAuth funktioniert auf originales Protokoll und unterstütz Web-, sowie Desktop- bzw. Mobile Applikationen.
+				Systemhierarchie und Konzept:
+				Kontoinhaber: Benutzer
+				Der Benutzer autorisiert sein Konto. Der Zugriff einen Dienst auf dem Benutzerkonto ist beschränkt (lesende- oder schreibende Zugriff).
+				Ressourcenserver und Autorisierungsserver: API
+				Der Ressourcenserver speichert die geschützten Daten von Benutzerkonten und der Autorisierungsserver verifiziert die Authentizität der vom Benutzer bereitgestellten Informationen und erstellt dann Autorisierungstoken für die Anwendung, über die die Anwendung auf Benutzerdaten realisiert wird. 
+				Aus Sicht des Anwendungsentwicklers führt die Service-API sowohl die Ressourcenserverrolle als auch die Autorisierungsserverrolle aus.
+				Client: externer Service 
+				Applikation bzw. Dienst, die auf das Benutzerkonto zugreifen, muss vor dem Zugriff vom Benutzer autorisiert werden und die Autorisierung muss von der API kontrolliert werden.
+				<img class="content-img-1" src="github/OAuth2.jpg">
 				<span class="last-updated">
 					aktualisiert am <b>28.10.2018</b>
 				</span>
