@@ -2,11 +2,11 @@
 Softwareasuwahl- und anpassung
 https://rodchenk.github.io/foliage/
 
-# Source code verwaltung
+# Softwareauswahl- und Anpassung
 
 Thema
 
-	Umstieg auf Micro-Service Architecture
+	Umstieg auf Micro-Service Architecture/ Source code verwaltung
 
 Teammitglieder
 
