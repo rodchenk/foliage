@@ -34,3 +34,5 @@ Teammitglieder
 	Nikita Ivachshenko ->  Protokollfuehrer, Sprecher
 	
 	Ornella -> Mitarbeiterin
+
+![Alt text](github/archit_konzept_new.png?raw=true "Architecture")
