@@ -4,6 +4,8 @@ https://rodchenk.github.io/foliage/
 
 # Softwareauswahl- und Anpassung
 
+![Alt text](github/archit_konzept_new.png?raw=true "Architecture")
+
 Thema
 
 	Umstieg auf Micro-Service Architecture/ Source code verwaltung
@@ -35,4 +37,3 @@ Teammitglieder
 	
 	Ornella -> Mitarbeiterin
 
-![Alt text](github/archit_konzept_new.png?raw=true "Architecture")
