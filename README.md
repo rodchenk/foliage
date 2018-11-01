@@ -1,5 +1,5 @@
 # foliage
-Check out our doucumentaion
+Check out our documentation
 https://rodchenk.github.io/foliage/
 
 # Softwareauswahl- und Anpassung
