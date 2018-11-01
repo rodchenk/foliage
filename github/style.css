@@ -1,5 +1,5 @@
 body{
-	min-width: 940px;
+	min-width: 840px;
 	font-family: 'Quicksand', sans-serif;
 	margin: 0;
 	padding: 0;
@@ -469,8 +469,8 @@ a:hover{
 	margin: auto;
 }
 .content-block>img.content-img-l{
-	max-height: 900px;
-	max-width: 720px;
+	/*max-height: 900px;
+	max-width: 720px;*/
 	display: block;
 	margin: auto;
 }
