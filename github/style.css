@@ -29,7 +29,7 @@ a:hover{
 	min-height: 100vh;
 	display: grid;
 	grid-template-columns: [menu]335px [padding]20px [content]auto [padding]50px;
-	border-bottom: 3px #1a1a1a solid;
+	/*border-bottom: 3px #1a1a1a solid;*/
 }
 .module-block:last-child{
 	border-bottom: 0;
@@ -48,6 +48,7 @@ a:hover{
 	padding: 15px;
 	padding-top: 40px;
 	padding-bottom: 5px;
+	box-shadow: 0 0 25px #0000004f;
 }
 .content-block:not(span){
 	font-size: 14px;
@@ -477,3 +478,38 @@ a:hover{
 	color: blue;
 }
 /*28.10.2018*/
+p.file-icon{
+	display: block;
+	background-image: url(file.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: auto;
+	height: 50px;
+}
+p.file-icon>span{
+	margin-left: 50px;
+	margin-top: 15px;
+	display: inline-block;
+}
+.content-theme>span{
+	display: inline-block;
+	padding-right: 10px;
+	padding-left:  10px;
+	border-radius: 3px;
+	float: right;
+	margin: 5px; 
+}
+.content-theme>span.info{background-color: #ae5a7a; color: white;}
+.content-theme>span.aufgabe{background-color: #6064bc; color: white;}
+.content-theme>span.file{background-color: #338335; color: white;}
+.content-theme>span.external{background-color: #9c5aae; color: white;}
+
+.content-theme>div{
+	display: inline-block;
+	float: right;
+	margin-right: 20px;
+	border-radius: 50%;
+	width: 15px;
+	height: 15px;
+	background-color: red;
+}
