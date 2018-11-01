@@ -28,7 +28,7 @@ a:hover{
 	width: 100%;
 	min-height: 100vh;
 	display: grid;
-	grid-template-columns: [menu]335px [padding]20px [content]auto [padding]50px;
+	grid-template-columns: [menu]335px [padding]20px [content]auto [padding]20px;
 	/*border-bottom: 3px #1a1a1a solid;*/
 }
 .module-block:last-child{
