@@ -331,6 +331,21 @@
 				Gesetz betreffend das Urheberrecht an Werken der bildenden Künste und der Photographie<br>
 				TMG, TKG usw.
 				(<i><a href="https://www.ra-plutte.de/social-media-recht/">Social Media Recht</a></i>)
+				<hr>
+				Für das Führen eines soziales Netzwerks haben Gründer die Pflicht ein paar Rechtlichen Anforderungen zu erfüllen. Dies dient zur Datenschutz und Datensicherheit aller Betreiber ,Behörden und Unternehmen des soziales Netzwerks. Dazu zählt:
+				•	Vertraulichkeit
+				•	Verfügbarkeit
+				•	Integrität
+				•	Nichtverkettbarkeit
+				•	Transparenz
+				•	Intervenierbarkeit
+				Alle oben genannte Anforderungen sind Bestandteile des Netzwerkdurchsetzungsgesetzes abgekürzt NetzDG. Die am 01.09.2017 Aktualisierung des NetzDG unterteilt dieses wiederum in mehreren unteren Gesetzen.
+				•	§1 Anwendungsbereich
+				•	$2 Berichtspflicht
+				•	$3 Umgang mit Beschwerden und rechtswidrige Inhalte
+				•	§4 Bußgeldvorschriften
+				•	§5 Inländischer Zustellungsbevollmächtigter
+				Damit die Schutzziele des NetzDG in Kraft kommen, müssen erstmal die Betreiber berechtigt sein sich auf die Plattform anzumelden, um unbefugten Datenmissbrauch zu mindern. Die Open Authorization abgekürzt OAuth ist ein offenes Standarprotokoll, das eine API- Autorisierung ermöglicht.Das Bedeutet die Datenermittlung zwischen verschiedenen Anwendungen, Benutzeroberflächen oder Webseiten.
 				<span class="last-updated">
 					aktualisiert am <b>28.10.2018</b>
 				</span>
@@ -354,7 +369,30 @@
 				<span class="content-theme">
 					<label>OAuth 2.0</label>
 				</span>
-				
+				OAuth 2 ist ein Autorisierungsframework, mit dem eingeschränkten Zugriff auf Benutzerkonten in HTTP-Diensten gewährleistet wird. OAuth funktioniert auf originales Protokoll und unterstütz Web-, sowie Desktop- bzw. Mobile Applikationen.
+
+				<h2>Systemhierarchie und Konzept:</h2>
+
+				<b>Kontoinhaber:</b> Benutzer
+				Der Benutzer autorisiert sein Konto. Der Zugriff einen Dienst auf dem Benutzerkonto ist beschränkt (lesende- oder schreibende Zugriff).
+
+				<b>Ressourcenserver und Autorisierungsserver: API</b>
+				Der Ressourcenserver speichert die geschützten Daten von Benutzerkonten und der Autorisierungsserver verifiziert die Authentizität der vom Benutzer bereitgestellten Informationen und erstellt dann Autorisierungstoken für die Anwendung, über die die Anwendung auf Benutzerdaten realisiert wird.
+				Aus Sicht des Anwendungsentwicklers führt die Service-API sowohl die Ressourcenserverrolle als auch die Autorisierungsserverrolle aus.
+				<b>Client: externer Service</b>
+				Applikation bzw. Dienst, die auf das Benutzerkonto zugreifen, muss vor dem Zugriff vom Benutzer autorisiert werden und die Autorisierung muss von der API kontrolliert werden.
+				<hr>
+				Die OAuth unterscheidet sich in vier verschiedene Rollen
+				•	Resource Owner
+				•	Resource Serer
+				•	Client
+				•	Authorization Server
+				Weiterhin wird zwischen vier vordefinierten Genehmigungsprozessen (Grant Types) unterschieden, die in verschiedenen Anwendungsfällen zum Einsatz kommen:
+
+				•	Autorisierungscode
+				•	Implizite Autorisierung
+				•	Passwortfreigabe durch den Resource Owner
+				•	Client-Berechtigung
 				<img class="content-img-1" src="github/OAuth2.jpg">
 				<span class="last-updated">
 					aktualisiert am <b>29.10.2018</b>
