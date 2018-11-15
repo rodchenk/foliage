@@ -31,7 +31,7 @@
 				</div>
 			</div>
 		</div>
-	</div>	
+	</div>
 	<div class="light-grey-bg" id="middle-part-wrapper">
 		<div id="middle-part">
 			<div class="middle-part-icons" id="secure">
@@ -50,7 +50,7 @@
 	</div>
 	<div class="explore-content" id="explore-content-code"></div>
 	<div class="explore-content" id="explore-content-pic"></div>
-	
+
 	<div class="centered" id="content">
 
 		<div class="module-block" id="sw-auswahl">
@@ -149,7 +149,7 @@
 				Im Rahmen von Auswahl und Anpassunge von IT-Diensten beschaeftigen wir uns mit dem Problem der Sourcecode Verwaltung in der <a href="https://de.wikipedia.org/wiki/Microservices" target="blanc">Microservice Architektur</a>. Das Problem liegt daran, dass sich mehrere Entwickler mit den gleichen Modulen beschaeftigen koennen. Ausserdem kann die Kommunikation zwischen einzelnen Modulen zu Konflikten fuehren, wenn Entwickler die Configuration von Schnittstellen unterschiedlich gestallten. <br>
 				<img src="github/arch.jpg">
 				Das Loesungskonzept ist die Benutzung von <a href="https://de.wikipedia.org/wiki/Versionsverwaltung" target="blanc">Version control systems</a> und die Unterteilung der Serverschicht auf Test- und Releaseserver. Dabei handlet es sich um die Anpassung von einem VC-Software, Erstellung von automatischen Tests und Releasefreigabe. <br>
-				Darueberhinaus haben wir vor, ein <a href="https://de.wikipedia.org/wiki/OAuth" target="blanc">OAuth-Service</a> und offene <a href="https://de.wikipedia.org/wiki/Programmierschnittstelle" target="blanc">API</a> zu erstellen, die wir frei fuer die anderen Entwickler bereitstellen, z.B. fuer die Entwicklung von mobilen Applikationen oder Authorisierungsverfahren in externen Webapplikationen ueber unser Service. 
+				Darueberhinaus haben wir vor, ein <a href="https://de.wikipedia.org/wiki/OAuth" target="blanc">OAuth-Service</a> und offene <a href="https://de.wikipedia.org/wiki/Programmierschnittstelle" target="blanc">API</a> zu erstellen, die wir frei fuer die anderen Entwickler bereitstellen, z.B. fuer die Entwicklung von mobilen Applikationen oder Authorisierungsverfahren in externen Webapplikationen ueber unser Service.
 				<img src="github/vcs.png">
 				<img src="github/oauth.png">
 				<span class="last-updated">
@@ -308,15 +308,18 @@
 						<span onclick="scrollToDiv('model-content')" class="under-p in-progress">
 							Modelierung
 						</span>
+						<span onclick="scrollToDiv('regestr-content')" class="under-p in-progress">
+							Regestrierung
+						</span>
 						<span onclick="scrollToDiv('techn-ums-content')" class="under-p in-progress">
 							Technische Umsetzung
 						</span>
 					<span onclick="scrollToDiv('pres-1-content')" class="ready">
 						Praesentation 1
 					</span>
-					
+
 				</div>
-			</div>	
+			</div>
 			<div class="content-block" id="team-content">
 				<span class="content-theme">
 					<label>Team und Rollenverteilung</label>
@@ -396,11 +399,11 @@
 					<span class="info">Info</span>
 					<span class="aufgabe">Aufgabe</span>
 				</span>
-				Die alte Architektur von unserer Web-Applikation hat nur über einen einzigen Eingang ins System verfügt. Das heißt, bei jeder Anfrage wurde geprüft, ob der Benutzer autorisiert ist, falls nicht → wird der Benutzer auf Login-Seite redirected. Login bzw. Regisitrierungsteil war monolithisch mit der Applikation verbunden und könnte nicht wiederverwendet werden. 
+				Die alte Architektur von unserer Web-Applikation hat nur über einen einzigen Eingang ins System verfügt. Das heißt, bei jeder Anfrage wurde geprüft, ob der Benutzer autorisiert ist, falls nicht → wird der Benutzer auf Login-Seite redirected. Login bzw. Regisitrierungsteil war monolithisch mit der Applikation verbunden und könnte nicht wiederverwendet werden.
 				<img class="content-img-l" src="github/archit_konzept_old.png">
-				In dem aktuellen Architekturkonzept haben wir besorgt, dass Security-Verfahren möglichst flexibel gestalten ist, sodass es mehrmals für verschiedene Zwecke verwendet werden könnte. Beispielweise möchten wir es ermöglichen, sich an externen Web-Applikation über unseren Security-Modul authentifizieren zu können (<a href="https://de.wikipedia.org/wiki/OAuth">OAuth2</a>, siehe unten). 
+				In dem aktuellen Architekturkonzept haben wir besorgt, dass Security-Verfahren möglichst flexibel gestalten ist, sodass es mehrmals für verschiedene Zwecke verwendet werden könnte. Beispielweise möchten wir es ermöglichen, sich an externen Web-Applikation über unseren Security-Modul authentifizieren zu können (<a href="https://de.wikipedia.org/wiki/OAuth">OAuth2</a>, siehe unten).
 
-				Für hohe Flexibilität wurden alle Security-bezogenen Zeuge in ein externes Modul ausgelagert. Die Kommunikation zwischen Security-Modul und der restlichen Logik findet über eine Schnittstelle statt. Dieser Betrachtungsweise ermöglicht die Verteilung von Aufgaben und Verantwortlichkeiten innerhalb von Entwicklerteam. Darüber hinaus haben wir den Code für Security Modul von PHP auf Java mit <a href="https://spring.io/projects/spring-security">Spring Security</a> umgeschrieben. Dies bietet unterschiedliche Designmuster und Konzepte für ein sicheres und zuverlässiges Security-verfahren an. Das Verschlüsseln von Passwörtern erfolgt mit <a href="https://de.wikipedia.org/wiki/Bcrypt">bcrypt Algorithmus</a>. 
+				Für hohe Flexibilität wurden alle Security-bezogenen Zeuge in ein externes Modul ausgelagert. Die Kommunikation zwischen Security-Modul und der restlichen Logik findet über eine Schnittstelle statt. Dieser Betrachtungsweise ermöglicht die Verteilung von Aufgaben und Verantwortlichkeiten innerhalb von Entwicklerteam. Darüber hinaus haben wir den Code für Security Modul von PHP auf Java mit <a href="https://spring.io/projects/spring-security">Spring Security</a> umgeschrieben. Dies bietet unterschiedliche Designmuster und Konzepte für ein sicheres und zuverlässiges Security-verfahren an. Das Verschlüsseln von Passwörtern erfolgt mit <a href="https://de.wikipedia.org/wiki/Bcrypt">bcrypt Algorithmus</a>.
 				<img class="content-img-l" src="github/archit_konzept_new.png">
 				Die restliche Logik ist ebenso auf Java Spring umgeschrieben und dies verfügt über eine <a href="https://de.wikipedia.org/wiki/Representational_State_Transfer">REST API</a> Schnittstelle, d. h. jeder Ressource ist mit seinem Bezeichner zu finden. Das ermöglicht mehrere Eingänge ins System, aber diesmal ist nicht die Authentifizierung zu prüfen, sondern die Zugriffsrechte/ Autorisierungsrechte. Die Zugriffsrechte in unserem System sind in 8 Schichten aufgeteilt (von 0 bis 7). Der nicht angemeldete Benutzer hat die Zugriffsrechte <b>0</b>, das heißt, er darf nur die Seiten angucken, die das <i>Permission</i> weniger als <b>1</b> haben, z.B. Login-/Registrierungsseite, Nichtprivate Accounts und Projekte von anderen Benutzern usw. Benutzer mit Zugriffsrechten <b>5</b> und <b>6</b> können die anderen Benutzer sperren/entsperren und die Einträge editieren/löschen. Die Benutzer mit den höchsten Zugriffsrechten <b>7</b> (Admin) verfügen über einen <i>Gott-Modus</i> im System. Die Authentifizierung mit Zugriffsrechten <b>> 5</b> (interne Mitarbeiter) erfolgt über <a href="https://de.wikipedia.org/wiki/Zwei-Faktor-Authentisierung">Zwei-Faktor-Authentisierung (2FA)</a>.
 				<span class="last-updated">
@@ -416,7 +419,7 @@
 				OAuth 2 ist ein Autorisierungsframework, mit dem eingeschränkten Zugriff auf Benutzerkonten in HTTP-Diensten gewährleistet wird. OAuth funktioniert auf originales Protokoll und unterstütz Web-, sowie Desktop- bzw. Mobile Applikationen.
 
 				<h2>Systemhierarchie und Konzept:</h2>
-				
+
 				<b>Kontoinhaber:</b> Benutzer
 				Der Benutzer autorisiert sein Konto. Der Zugriff einen Dienst auf dem Benutzerkonto ist beschränkt (lesende- oder schreibende Zugriff).
 				<br>
@@ -450,7 +453,99 @@
 					<label>Modelierung</label>
 					<span class="info">info</span>
 				</span>
-				TODO
+				Wie auf der unteren Abbildung abgebildet ist, haben wir das Authorization Module als komlett unabhaengiges Service ausgelagert. Dies ermoeglichst
+				die Wiederverwendung von Authorizationsfunktionalitaeten. Darueber hinaus gibt es weitere Vorteile wie z.B. die Arbeitsverteilung, erweiterte Sicherheitsfaktoren
+				und die Unabhaengigkeit von Applikationslogik.
+				<img src="github/tokens.png" />
+				<span class="last-updated">
+					aktualisiert am <b>14.11.2018</b>
+				</span>
+			</div>
+			<div class="content-block" id="regestr-content">
+				<span class="content-theme">
+					<label>Registrirung</label>
+					<span class="info">info</span>
+				</span>
+				Before andere Applikationen unser Authorizationmodule verwenden koennen, muessen sie sich zuerst in unserem Entwicklerportal registrieren. Wir haben eine separate
+				Datenbank, wo diese Angaben gespeichert werden. Die Struktur siehr folgendermassen aus:
+				<table cellspacing="0" border="1" cellpadding="5" width="600" style="border-color: transparent; margin: auto;">
+					<tr style="background-color: #1a1a1a;	color: white">
+						<th>app_id</th>
+						<th>app_name</th>
+						<th>reg_at</th>
+					</tr>
+					<tr>
+						<th>5235</th>
+						<th>Google</th>
+						<th>1542283375879</th>
+					</tr>
+					<tr>
+						<th>2340</th>
+						<th>THB</th>
+						<th>1542283400585</th>
+					</tr>
+					<tr>
+						<th>4327</th>
+						<th>Facebook</th>
+						<th>1542283400481</th>
+					</tr>
+					<tr>
+						<th>3299</th>
+						<th>foliage</th>
+						<th>1542283430509</th>
+					</tr>
+				</table>
+				Die naechste Tabelle zeigt auf welche private Inforamtionen die jeweilige Applikation zugreiffen darf, oder anders zu sagen -> welche Daten die Applikationen
+				als Response bekommen wird.
+				<table cellspacing="0" border="1" cellpadding="5" width="600">
+					<tr style="background-color: #1a1a1a;	color: white">
+						<th>app_id</th>
+						<th>data_id</th>
+					</tr>
+					<tr>
+						<th>3299</th>
+						<th>1</th>
+					</tr>
+					<tr>
+						<th>3299</th>
+						<th>2</th>
+					</tr>
+					<tr>
+						<th>3299</th>
+						<th>3</th>
+					</tr>
+					<tr>
+						<th>4327</th>
+						<th>1</th>
+					</tr>
+				</table>
+				Und die Tabelle mit Daten und jeweiligen IDs:
+				<table cellspacing="0" border="1" cellpadding="5" width="600">
+					<tr style="background-color: #1a1a1a;	color: white">
+						<th>data_id</th>
+						<th>data_name</th>
+					</tr>
+					<tr>
+						<th>1</th>
+						<th>firstname</th>
+					</tr>
+					<tr>
+						<th>2</th>
+						<th>lastname</th>
+					</tr>
+					<tr>
+						<th>3</th>
+						<th>photos</th>
+					</tr>
+					<tr>
+						<th>4</th>
+						<th>friends</th>
+					</tr>
+				</table>
+				Nach der Registrierung bekommt die externe Applikationen einen einzigartigen <b>app_id</b>, die dann von ihrer Seite als Pflichtparameter uebergeben wird,
+				damit die API die Anfrage validieren koennte.
+				Diese Anfragen muessen dann wie folgt aussehen: <br>
+				<i>api.foliage.com/login/?app_id=&#60;app_id&#62;</i>
 				<span class="last-updated">
 					aktualisiert am <b>14.11.2018</b>
 				</span>
@@ -460,7 +555,87 @@
 					<label>Technische umsetzung</label>
 					<span class="info">info</span>
 				</span>
-				TODO
+				Unsere API bietet momentat drei Methoden an:
+				<ul style="list-style-type: none;">
+					<li>api.foliage.com/login</li>
+					<li>api.foliage.com/prolongate</li>
+					<li>api.foliage.com/logout</li>
+				</ul>
+				Wenn ein auf <b>foliage</b> registrierter Benutzer auf einer externen Webseite/Applikation anmelden moechte und das jeweilige Service bietet diese Moeglichkeit an,
+				dann clickt der Benutzer auf das Button <b>Anmelden ueber foliage</b>. <br>
+				Die Applikationen fuehrt ein Redirect aus auf folgendes URL: <br>
+				<u>api.foliage.com/auth/login/?app_id=&#60;app_id&#62;&redirect_uri=&#60;redirect_uri&#62; </u>
+				Die API prueft die Identitaet der Anfrage und der Client-Applikation und laedt eine eigene Login-Seite. Der Benutzer git sein Benutzername und Password ein,
+				bestaetigt, dass er den Zugriff auf die aufgelistete Daten erlaubt und clickt auf <b>Anmelden</b>. <br>
+				Die Anmeldedaten werden an die API gesendet, und von da an Authorizationmodule. Wenn die Anmeldung erfolgreich war, liefert die API eine JSON-Datei zurueck: <br>
+				{<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;"status" : 			true,<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;"access_token" : 	&#60;access_token&#62;,<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;"expires_at" : 		86400,<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;"refresh_token" : 	&#60;refresh_token&#62;,<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;"user" : {<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	"name" : 	&#60;name&#62;,<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	"photo" : 	&#60;photo&#62;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+				}<br>
+				Danach wird der Benutzer zurueck redirected auf URL, was oben im ersten Befehl stand (redirect_uri=&#60;redirect_uri&#62;)<br>
+				<b>
+					&#60;redirect_uri&#62;?access_token=&#60;access_token&#62;&refresh_token=&#60;refresh_token&#62;&expires_at=86400&name=&#60;name&#62;&photo=&#60;photo_url&#62;
+				</b>
+				Der generierte Token ist 86400s gueltig, danach muss sich der Benutzer entweder neu anmelden oder die Client-Applikation kann das automation mithilfe von <b>refresh_token</b>
+				durchfuehren. Die automatische Verlaengerung von <b>access_token</b> kann durch den Aufruf von der Methode api.foliage.com/prolongate durchgefuehrt werden. Die Anfrage an
+				API soll folgendermassen aussehen: <br>
+				<b>
+					api.foliage.com/prolongate?refresh_token=&#60;refresh_token&#62;&access_token=&#60;access_token&#62;
+				</b><br>
+				Als Response bekommt man:<br>
+				{<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;"status" : true,<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;"access_token" : &#60;access_token&#62;,<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;"refresh_token" : &#60;refresh_token&#62;<br>
+				}<br>
+				Auf der Seite von Authorisierungsmodule gibt es dann folgende DB-Tabellen:
+				<table cellspacing="0" border="1" cellpadding="5" width="600">
+					<tr style="background-color: #1a1a1a;	color: white">
+						<th>app_id</th>
+						<th>user_id</th>
+						<th>access_token</th>
+						<th>refresh_token</th>
+						<th>expires_at</th>
+					</tr>
+					<tr>
+						<th>3299</th>
+						<th>3243</th>
+						<th>NKFJD6FSK3</th>
+						<th>dsdcGJHG6_D</th>
+						<th>154228324235</th>
+					</tr>
+					<tr>
+						<th>3299</th>
+						<th>5432</th>
+						<th>SDKBkj7HK</th>
+						<th>DBJhBU7gi7</th>
+						<th>1542283400235</th>
+					</tr>
+					<tr>
+						<th>2348</th>
+						<th>23445</th>
+						<th>KFVNKJnkj78g</th>
+						<th>SBJbjs6sgvV</th>
+						<th>1542283400523</th>
+					</tr>
+				</table>
+				Das Authorisationsmodule hat alle notwendigen Informationen, wo und wer angemeldet ist. Das ermoeglicht ein Logout von allen oder bestimmten Applikationen durch
+				loeschen von <b>access_token</b> und <b>refresh_token</b>.<br>
+				<ul style="list-style-type: none;">
+					<li style="background-color: lightpink; display: inline; padding: 4px; border-radius: 4px"><b>UPDATE</b> table <b>SET</b> refresh_token = NULL, access_token = NULL <b>WHERE</b> user_id = 3243;</li>
+				</ul>
+				Offene Fragen:
+				<ul style="list-style-type: none;">
+					<li>Wie oft und wie kann die Client-Applikation die Gueltigkeit des Token pruefen?</li>
+					<li>Wie soll das refresh_token funktionieren? Z.B. wenn der Benutzer ausgeloggt ist.</li>
+					<li>Wie kann die Client-App feststellen, dass es um einen und den selben Benutzer geht? Z.B. nach dem Logout und erneuten Login.</li>
+				</ul>
 				<span class="last-updated">
 					aktualisiert am <b>14.11.2018</b>
 				</span>
