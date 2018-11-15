@@ -3,7 +3,7 @@ body{
 	font-family: 'Quicksand', sans-serif;
 	margin: 0;
 	padding: 0;
-} 
+}
 a{
 	text-decoration: none;
 	color: #283056;
@@ -185,7 +185,7 @@ a:hover{
 .block{
 	background-color: white;
 	border-radius: 4px;
-	border: 1px rgb(220,220,220) solid; 
+	border: 1px rgb(220,220,220) solid;
 	width: inherit;
 	margin: 15px;
 	min-height: 150px;
@@ -304,7 +304,7 @@ a:hover{
 	background-size: 190px 215px;
 	background-repeat: no-repeat;
 	width: 200px;
-	height: 270px; 
+	height: 270px;
 	display: inline-block;
 	margin-left: 35px;
 	margin-right: 35px;
@@ -497,7 +497,7 @@ p.file-icon>span{
 	padding-left:  10px;
 	border-radius: 3px;
 	float: right;
-	margin: 5px; 
+	margin: 5px;
 }
 .content-theme>span.info{background-color: #ae5a7a; color: white;}
 .content-theme>span.aufgabe{background-color: #6064bc; color: white;}
@@ -512,4 +512,12 @@ p.file-icon>span{
 	width: 15px;
 	height: 15px;
 	background-color: red;
+}
+th{
+	text-align: center;
+}
+tr:nth-child(odd) {background: #eeecec}
+table{
+	 border-color: transparent;
+	 margin: auto;
 }
