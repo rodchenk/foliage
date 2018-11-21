@@ -6,487 +6,751 @@
 	<script type="text/javascript" src="github/script.js"></script>
 	<link rel="icon" type="image/png" href="github/favicon.png">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="github/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="github/all.min.css">
 	<title>uncupped API</title>
 </head>
-<body class="light-grey-bg">
-	<div id="top-head">
-		<div id="top-button" class="light-grey-bg">
-			<div id="arrow"></div>
+<body class="bg-white">
+	<header class="mb-3 mt-2">
+		<div class="position-absolute" style="left: -40%; top: -35%">
+			<img src="github/covernew3.png" class="img-fluid">
 		</div>
-		<div id="top-head-wrapper">
-			<div id="top-menu">
-				<span id="logo"></span>
-				<span class="top-icons" id="github-top"></span>
-				<span class="top-icons" id="download-top"></span>
-				<div class="top-menu-middle centered">
-					<span id="start">Get started</span>
-					<span id="security">Security</span>
-					<span id="contact">Contact</span>
-				</div>
-			</div>
-			<div id="top-topic">
-				<div>
-					<label>API</label>
-					<span>version <b>0.1</b></span>
+		<div class="container-fluid mb-3">
+			<div class="row">
+				<img src="github/logo.png" style="max-height: 30px;filter: brightness(0);margin: 5px">
+				<div class="text-right col head-link">
+					<a style="color: #6c757d" href="https://github.com/rodchenk/foliage/issues">Community</a>
+					<a style="color: #6c757d" href="https://github.com/rodchenk">Contact</a>
 				</div>
 			</div>
 		</div>
-	</div>	
-	<div class="light-grey-bg" id="middle-part-wrapper">
-		<div id="middle-part">
-			<div class="middle-part-icons" id="secure">
-				<button>Go to Datenschutz</button>
-			</div>
-			<div class="middle-part-icons" id="easy">
-				<button>Go to SW-Auswahl</button>
-			</div>
-			<div class="middle-part-icons" id="fast">
-				<button>Go to API</button>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 container-center">
+					<span class="text-primary">
+						<h2 style="font-weight: bold">TH Brandenburg</h2>
+						<span class="text-secondary">
+						The hardest thing of all is to find a black cat in a dark room, especially if there is no cat. <br>
+						<span class="mt-2 d-inline-block">― Confucius</span>
+						</span>
+					</span>
+					<div class="head-button mt-3">
+						<button id="get-started-b" onclick="scrollToDiv(null, 'explore-content-code')" class="text-white" style="background-color: #4183d7">Get started</button>
+						<a href="https://github.com/rodchenk/foliage" target="blanc">
+							<button class="ml-4 bg-secondary text-white" style="padding-left: 16px;padding-right: 16px" id="to-github-b">	<i class="fab fa-github"></i>
+							</button>
+							<label for="to-github-b" class="ml-1 text-secondary"> Go to Github</label>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<img class="img-fluid" src="github/comp.svg">
+				</div>
 			</div>
 		</div>
-	</div>
-	<div id="full-block">
-		<div class="btn-liquid" id="liquid-button"></div>
-	</div>
-	<div class="explore-content" id="explore-content-code"></div>
+		<div class="container-fluid mt-5 mb-5">
+			<div class="position-absolute">
+				<img src="github/covernew3.png" class="img-fluid">
+			</div>
+			<div class="container">
+				<div class="mx-auto col-xl-9 col-md-10 col-sm-12 row">
+					<div class="col-md-4 text-center">
+						<div class="blue-block" onclick="scrollToDiv(null, 'dsus-container')">
+							<img src="github/blue-icon-3.png" class="img-fluid d-block">
+							<span class="text-white block-label">
+								<h4>Datenschutz und Sicherheit</h4>
+							</span>
+						</div>
+					</div>
+					<div class="col-md-4 text-center" onclick="scrollToDiv(null, 'auavid-container')">
+						<div class="blue-block blue-block-selected">
+							<img src="github/blue-icon-2.png" class="img-fluid d-block">
+							<span class="text-white block-label">
+								<h4>Anpassung von IT-Diensten</h4>
+							</span>
+						</div>
+					</div>
+					<div class="col-md-4 text-center">
+						<div class="blue-block">
+							<img src="github/blue-icon-1.png" class="img-fluid d-block">
+							<span class="text-white block-label">
+								<h4>Web-basierte Frameworks</h4>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="explore-content position-relative" style="z-index: 99" id="explore-content-code"></div>
 	<div class="explore-content" id="explore-content-pic"></div>
-	
-	<div class="centered" id="content">
 
-		<div class="module-block" id="sw-auswahl">
-			<div class="topic-module">
-				Softwareauswahl- und Anpassung
-				<a target="blanc" href="https://www.th-brandenburg.de/mitarbeiterseiten/fbw/vera-meister/?S=0%3F%3F%27">@Prof. Dr. rer. nat. Vera G. Meister</a>
-			</div>
-			<div class="menu-wrap">
-				<div class="menu">
-					<div class="menu-topic">Content</div>
-					<span onclick="scrollToDiv('sw-team-content')" class="ready">
-						Team
+	<!-- new version start -->
+	<div id="auavid-container" class="container-fluid">
+		<div class="row">
+			<div class="side-bar bg-gray-dark text-white">
+				<div class="sticky-top mb-4">
+					<span class="side-bar-topic">
+						<img src="github/auavid.png" width="120" height="120">
+						<span>Auswahl und Anpassung von IT-Diensten</span>
 					</span>
-					<span onclick="scrollToDiv('sw-thema-content')" class="ready">
-						Thema
-					</span>
-					<span onclick="scrollToDiv('sw-focus-content')" class="ready">
-						Projektfokus
-					</span>
-					<span onclick="scrollToDiv('sw-ssad-content')" class="in-progress">
-						SSAD und ARD Themen
-					</span>
-					<span onclick="scrollToDiv('sw-ssad1-content')" class="under-p not-ready">
-						Identify Potential Suppliers
-					</span>
-					<span onclick="scrollToDiv('sw-ssad2-content')" class="under-p not-ready">
-						Establish Negotiation Plans
-					</span>
-					<span onclick="scrollToDiv('sw-ssad3-content')" class="under-p not-ready">
-						Select Suppliers
-					</span>
-					<span onclick="scrollToDiv('sw-ssad4-content')" class="under-p not-ready">
-						Establish Supplier Agreement
-					</span>
-
-					<span onclick="scrollToDiv('sw-ard1-content')" class="under-p not-ready">
-						Prioritize Customer Requirements
-					</span>
-					<span onclick="scrollToDiv('sw-ard2-content')" class="under-p not-ready">
-						Establish Operational Concepts
-					</span>
-					<span onclick="scrollToDiv('sw-ard3-content')" class="under-p not-ready">
-						Analyze Requirements to Achieve Balance
-					</span>
-					<span onclick="scrollToDiv('sw-ard4-content')" class="under-p not-ready">
-						Validate Requirements
-					</span>
-					<span onclick="scrollToDiv('sw-ws-content')" class="in-progress">
-						Internationales Workshop
-					</span>
+					<div class="side-bar-themes">
+						<span id="auavid-team-bar" class="side-bar-selected" onclick="scrollToDiv(this, 'auavid-team-content')">
+							<i class="fas fa-address-book"></i> Team
+						</span>
+						<span id="auavid-thema-bar" onclick="scrollToDiv(this, 'auavid-thema-content')">
+							<i class="fas fa-feather-alt"></i> Thema
+						</span>
+						<span id="auavid-focus-bar" onclick="scrollToDiv(this, 'auavid-focus-content')">
+							<i class="fas fa-award"></i> Projektfocus
+						</span>
+						<span id="auavid-workshop-bar" onclick="scrollToDiv(this, 'auavid-workshop-content')">
+							<i class="fas fa-globe-africa"></i> Workshop
+						</span>
+						<span id="auavid-ssad-bar" onclick="scrollToDiv(this, 'auavid-ssad-content')">
+							<i class="fas fa-bolt"></i> SSAD und ARD
+						</span>
+					</div>
 				</div>
 			</div>
-			<div class="content-block" id="sw-team-content">
-				<span class="content-theme">
-					<label>
-						<a href="https://github.com/rodchenk/foliage/issues/2" target="blanc"> Team und Rollenverteilung</a>
-					</label>
-					<span class="info">Info</span>
-				</span>
-
-				<b>
-					<a href="https://github.com/rodchenk/" target="blanc">Mischa</a>
-				</b> Praxisexpret, Github-Expert<br>
-
-				<b>
-					<a href="https://github.com/NickIvachshenko" target="blanc">Nikita</a>
-				</b> Teamsprecher, Serverorchestrierung<br>
-
-				<b><a href="https://github.com/biggymat" target="blanc">Arsene</a></b> Client-Server Lösung, Camunda Expert<br>
-				<b><a href="https://github.com/pouahang" target="blanc">Ornella</a></b> Cloud Lösung, DMN Expertin
-				<img src="github/IT-Selection slide 1.png"></img>
-				<span class="last-updated">
-					aktualisiert am <b>14.10.2018</b>
-				</span>
-			</div>
-			<div class="content-block" id="sw-thema-content">
-				<span class="content-theme">
-					<label><a href="https://github.com/rodchenk/foliage/issues/3" target="blanc">Thema (Auswahl von IT-Diensten)</a></label>
-					<span class="info">Info</span>
-				</span>
-				<b><a href="https://github.com/rodchenk/" target="blanc">Mischa</a></b> Beschreibung des Projektfokus und Motivation<br>
-				<b><a href="https://github.com/NickIvachshenko" target="blanc">Nikita</a></b> Entwicklung der Lieferantenanforderungen nach CMII-ACQ SSAD<br>
-				<b><a href="https://github.com/biggymat" target="blanc">Arsene</a></b> Lösungsempfehlung mit rationaler Begründung nach AHP<br>
-				<b><a href="https://github.com/pouahang" target="blanc">Ornella</a></b> Erhebung von Kundenanforderungen nach CMII-ACQ ARD
-				<span class="last-updated">
-					aktualisiert am <b>14.10.2018</b>
-				</span>
-			</div>
-			<div class="content-block" id="sw-focus-content">
-				<span class="content-theme">
-					<label><a href="https://github.com/rodchenk/foliage/issues/4" target="blanc">Projektfokus</a></label>
-					<span class="aufgabe">Aufgabe</span>
-					<span class="external">Links</span>
-				</span>
-				<b>foliage</b> ist eine junges Start Up, welches es modernes soziales Netzwerk entwickelt. Der Focus liegt bei Projekten und Aktivitaeten, die die Benutzer erstellen und in Teams weiterentwickeln koennen. Es handelt sich um ein evolutioniertes Ticketsystem, orientiert auf Studenten, Schueler und engagierte aktive Menschen. <br>
-				Im Rahmen von Auswahl und Anpassunge von IT-Diensten beschaeftigen wir uns mit dem Problem der Sourcecode Verwaltung in der <a href="https://de.wikipedia.org/wiki/Microservices" target="blanc">Microservice Architektur</a>. Das Problem liegt daran, dass sich mehrere Entwickler mit den gleichen Modulen beschaeftigen koennen. Ausserdem kann die Kommunikation zwischen einzelnen Modulen zu Konflikten fuehren, wenn Entwickler die Configuration von Schnittstellen unterschiedlich gestallten. <br>
-				<img src="github/arch.jpg">
-				Das Loesungskonzept ist die Benutzung von <a href="https://de.wikipedia.org/wiki/Versionsverwaltung" target="blanc">Version control systems</a> und die Unterteilung der Serverschicht auf Test- und Releaseserver. Dabei handlet es sich um die Anpassung von einem VC-Software, Erstellung von automatischen Tests und Releasefreigabe. <br>
-				Darueberhinaus haben wir vor, ein <a href="https://de.wikipedia.org/wiki/OAuth" target="blanc">OAuth-Service</a> und offene <a href="https://de.wikipedia.org/wiki/Programmierschnittstelle" target="blanc">API</a> zu erstellen, die wir frei fuer die anderen Entwickler bereitstellen, z.B. fuer die Entwicklung von mobilen Applikationen oder Authorisierungsverfahren in externen Webapplikationen ueber unser Service. 
-				<img src="github/vcs.png">
-				<img src="github/oauth.png">
-				<span class="last-updated">
-					aktualisiert am <b>15.10.2018</b>
-				</span>
-			</div>
-			<div class="content-block" id="sw-ssad-content">
-				<span class="content-theme">
-					<label><a href="https://github.com/rodchenk/foliage/issues/8" target="blanc">SSAD und ARD Themen</a></label>
-					<span class="info">Info</span>
-				</span>
-				<h2><b><a href="https://moodle.th-brandenburg.de/course/view.php?id=5227#section-4">CMMI Prozessgebiete</a></b></h2>
-				Fur unser Projekt sind folgende Themen relevant:<br>
-				<b>SSAD</b>
-				<br>
-				SP 1.1 Identify Potential Suppliers -> <a href="https://github.com/rodchenk">@rodchenk</a><br>
-				SP 2.2 Establish Negotiation Plans -> <a href="https://github.com/NickIvachshenko">@NickIvachshenko</a><br>
-				SP 2.3 Select Suppliers -> <a href="https://github.com/biggymat">@biggymat</a><br>
-				SP 3.2 Establish Supplier Agreement -> <a href="https://github.com/pouahang">@pouahang</a><br>
-				<b>ARD</b>
-				<br>
-				SP 1.2 Develop and Prioritize Customer Requirements -> <a href="https://github.com/biggymat">@biggymat</a><br>
-				SP 3.1 Establish Operational Concepts and Scenarios -> <a href="https://github.com/rodchenk">@rodchenk</a><br>
-				SP 3.3 Analyze Requirements to Achieve Balance -> <a href="https://github.com/NickIvachshenko">@NickIvachshenko</a><br>
-				SP 3.4 Validate Requirements -> <a href="https://github.com/pouahang">@pouahang</a>
-				<span class="last-updated">
-					aktualisiert am <b>28.10.2018</b>
-				</span>
-			</div>
-			<div class="content-block" id="sw-ssad1-content">
-				<span class="content-theme">
-					<label><a href="#" target="blanc">Identify Potential Suppliers</a></label>
-					<span class="aufgabe">Aufgabe</span>
-				</span>
-				TODO
-				<span class="last-updated">
-					aktualisiert am <b>28.10.2018</b>
-				</span>
-			</div>
-			<div class="content-block" id="sw-ssad2-content">
-				<span class="content-theme">
-					<label><a href="#" target="blanc">Establish Negotiation Plans</a></label>
-					<span class="aufgabe">Aufgabe</span>
-				</span>
-				TODO
-				<span class="last-updated">
-					aktualisiert am <b>28.10.2018</b>
-				</span>
-			</div>
-			<div class="content-block" id="sw-ssad3-content">
-				<span class="content-theme">
-					<label><a href="#" target="blanc">Select Suppliers</a></label>
-					<span class="aufgabe">Aufgabe</span>
-				</span>
-				TODO
-				<span class="last-updated">
-					aktualisiert am <b>28.10.2018</b>
-				</span>
-			</div>
-			<div class="content-block" id="sw-ssad4-content">
-				<span class="content-theme">
-					<label><a href="#" target="blanc">Establish Supplier Agreement</a></label>
-					<span class="aufgabe">Aufgabe</span>
-				</span>
-				TODO
-				<span class="last-updated">
-					aktualisiert am <b>28.10.2018</b>
-				</span>
-			</div>
-			<div class="content-block" id="sw-ard1-content">
-				<span class="content-theme">
-					<label><a href="#" target="blanc">Develop and Prioritize Customer Requirements</a></label>
-					<span class="aufgabe">Aufgabe</span>
-				</span>
-				TODO
-				<span class="last-updated">
-					aktualisiert am <b>28.10.2018</b>
-				</span>
-			</div>
-			<div class="content-block" id="sw-ard2-content">
-				<span class="content-theme">
-					<label><a href="#" target="blanc">Establish Operational Concepts</a></label>
-					<span class="aufgabe">Aufgabe</span>
-				</span>
-				TODO
-				<span class="last-updated">
-					aktualisiert am <b>28.10.2018</b>
-				</span>
-			</div>
-			<div class="content-block" id="sw-ard3-content">
-				<span class="content-theme">
-					<label><a href="#" target="blanc">Analyze Requirements to Achieve Balance</a></label>
-					<span class="aufgabe">Aufgabe</span>
-				</span>
-				TODO
-				<span class="last-updated">
-					aktualisiert am <b>28.10.2018</b>
-				</span>
-			</div>
-			<div class="content-block" id="sw-ard4-content">
-				<span class="content-theme">
-					<label><a href="#" target="blanc">Validate Requirements</a></label>
-					<span class="aufgabe">Aufgabe</span>
-				</span>
-				TODO
-				<span class="last-updated">
-					aktualisiert am <b>28.10.2018</b>
-				</span>
-			</div>
-
-
-			<div class="content-block" id="sw-ws-content">
-				<span class="content-theme">
-					<label><a href="#" target="blanc">Internationales Workshop</a></label>
-					<span class="file">file</span>
-					<span class="info">info</span>
-				</span>
-				<img src="github/IT-Selection slide 0.png"></img>
-				<a href="github/workshop.pdf">
-					<p class="file-icon">
-						<span>Workshop Presentation.pdf</span>
-					</p>
-				</a>
-				<span class="last-updated">
-					aktualisiert am <b>04.11.2018</b>
-				</span>
-			</div>
-		</div>
-
-		<div class="module-block" id="datenschutz-module">
-			<div class="topic-module">
-				Datenschutz und Sicherheitsmanagement
-				<a target="blanc" href="https://www.th-brandenburg.de/mitarbeiterseiten/fbw/ivo-keller/">@Prof. Dr. rer. nat. Ivo Keller</a>
-			</div>
-			<div class="menu-wrap">
-				<div class="menu">
-					<div class="menu-topic">Content</div>
-					<span onclick="scrollToDiv('team-content')" class="ready">
-						Team
-					</span>
-					<span onclick="scrollToDiv('thema-content')" class="ready">
-						Thema
-					</span>
-					<span onclick="scrollToDiv('produkt-content')" class="ready">
-						Produkt
-					</span>
-					<span onclick="scrollToDiv('recht-content')" class="in-progress">
-						Rechtliche Anforderungen
-					</span>
-					<span onclick="scrollToDiv('architektur-content')" class="ready">
-						Architekturkonzept
-					</span>
-					<span onclick="scrollToDiv('oauth-content')" class="in-progress">
-						OAuth 2.0
-					</span>
-						<span onclick="scrollToDiv('model-content')" class="under-p in-progress">
-							Modelierung
+			<div class="content col bg-white">
+				<div class="row border-bottom" id="auavid-team-content">
+					<div class="col-12">
+						<span class="content-topic">
+							<h2 class="d-inline-block"><a href="https://github.com/rodchenk/foliage/issues/2" target="blanc"> Team und Rollenverteilung</a></h2>
+							<span class="ml-2 info">Info</span>
+							<span class="last-updated float-right">
+								aktualisiert am <b>14.10.2018</b>
+							</span>
 						</span>
-						<span onclick="scrollToDiv('techn-ums-content')" class="under-p in-progress">
-							Technische Umsetzung
-						</span>
-					<span onclick="scrollToDiv('pres-1-content')" class="ready">
-						Praesentation 1
-					</span>
-					
+						<div class="content-body">
+							<div class="container-fluid mb-3">
+								<div class="row">
+									<div class="col-sm-12 col-md-12 col-lg-8 mx-auto">
+										<div class="row">
+											<div class="col-md-2 text-center">
+												<img src="github/team1.png" class="img-fluid"></img>
+												<span class="d-block">Mykhailo Rodchenkov</span>
+											</div>
+											<div class="col-md-1"></div>
+											<div class="col-md-2 text-center">
+												<img src="github/team2.png" class="img-fluid"></img>
+												<span class="d-block">Nikita Ivachshenko</span>
+											</div>
+											<div class="col-md-1"></div>
+											<div class="col-md-2 text-center">
+												<img src="github/team3.png" class="img-fluid"></img>
+												<span class="d-block">Ornella Pouahe</span>
+											</div>
+											<div class="col-md-1"></div>
+											<div class="col-md-2 text-center">
+												<img src="github/team4.png" class="img-fluid"></img>
+												<span class="d-block">Arsene Tresor</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<a href="https://github.com/rodchenk/" target="blanc">Mischa</a>
+							Praxisexpret, Github-Expert<br>
+							<a href="https://github.com/NickIvachshenko" target="blanc">Nikita</a> 
+							Teamsprecher, Serverorchestrierung<br>
+							<a href="https://github.com/biggymat" target="blanc">Arsene</a> 
+							Client-Server Lösung, Camunda Expert<br>
+							<a href="https://github.com/pouahang" target="blanc">Ornella</a> 
+							Cloud Lösung, DMN Expertin							
+						</div>
+					</div>
 				</div>
-			</div>	
-			<div class="content-block" id="team-content">
-				<span class="content-theme">
-					<label>Team und Rollenverteilung</label>
-					<span class="info">Info</span>
-				</span>
-				<b>Mykhailo</b> -> Koordinator, technischer Expert<br>
-				<b>Nikita</b> ->  Protokollfuehrer, Sprecher<br>
-				<b>Ornella</b> -> Mitarbeiterin
-				<span class="last-updated">
-					aktualisiert am <b>14.10.2018</b>
-				</span>
-			</div>
-			<div class="content-block" id="thema-content">
-				<span class="content-theme">
-					<label>Thema</label>
-					<span class="info">Info</span>
-				</span>
-				OAuth2 und Autorisierungs- und Authentificationsmodule in SOA am Beispiel von einem StartUp<br>
-				Verschluesselungskonzepte der Benutzerdaten in Entwicklungspfase (im StartUp)
-				<span class="last-updated">
-					aktualisiert am <b>14.10.2018</b>
-				</span>
-			</div>
-			<div class="content-block" id="produkt-content">
-				<span class="content-theme">
-					<label>
-						<a href="https://github.com/rodchenk/foliage/issues/9#issuecomment-433716548">Produkt</a>
-						<span class="aufgabe">Aufgabe</span>
-					</label>
-				</span>
-				Wir entwickeln ein projekt-, aktiviatäts- und zeitmanagementorientiertes soziales Netzwerk, das eine Alternative zum klassischen Ticketsystem (z. B. JIRA) darstellt. Es orientiert sich vor allem auf die jungen engagierten Menschen und nicht auf die Unternehmen. Da wir eine hohe Zahl von Benutzern erwarten, stellt sich die Frage, wie die Datensicherheit und der Datenschutz im Unternehmen bzw. im Netz gestaltet werden sollte. Darüber hinaus hat das deutsche/europäische Gesetz eigene Anforderungen, was die sozialen Netze betrifft.
-				<span class="last-updated">
-					aktualisiert am <b>28.10.2018</b>
-				</span>
-			</div>
-			<div class="content-block" id="recht-content">
-				<span class="content-theme">
-					<label>Rechtliche Anforderungen</label>
-					<span class="external">Links</span>
-					<span class="aufgabe">Aufgabe</span>
-				</span>
-				<b><a href="https://dejure.org/gesetze/TMG/5.html">TMG § 5 Allgemeine Informationspflichten</a></b>
-				<br>
-				Dabei gilt es auch zu beachten, dass das Impressum mit maximal zwei Klicks erreichbar sein sollte, um die gesetzliche Vorgabe für ein „unmittelbar erreichbares“ Impressum nach dem Telemediengesetz § 5  zu gewährleisten.<br>
-				<b><a href="">TMG § 13 Pflichten des Diensteanbieters</a></b><br>
-				Der Diensteanbieter hat den Nutzer zu Beginn des Nutzungsvorgangs über Art, Umfang und Zwecke der Erhebung und Verwendung personenbezogener Daten sowie über die Verarbeitung seiner Daten in Staaten außerhalb des Anwendungsbereichs der Richtlinie 95/46/EG des Europäischen Parlaments und des Rates vom 24. Oktober 1995 zum Schutz natürlicher Personen bei der Verarbeitung personenbezogener Daten und zum freien Datenverkehr (ABl. EG Nr. L 281 S. 31) in allgemein verständlicher Form zu unterrichten, sofern eine solche Unterrichtung nicht bereits erfolgt ist. 2Bei einem automatisierten Verfahren, das eine spätere Identifizierung des Nutzers ermöglicht und eine Erhebung oder Verwendung personenbezogener Daten vorbereitet, ist der Nutzer zu Beginn dieses Verfahrens zu unterrichten. 3Der Inhalt der Unterrichtung muss für den Nutzer jederzeit abrufbar sein.<br>
-				<b><a href="https://dejure.org/gesetze/KunstUrhG/22.html">UrhG § 22</a></b><br>
-				Gesetz betreffend das Urheberrecht an Werken der bildenden Künste und der Photographie<br>
-				TMG, TKG usw.
-				(<i><a href="https://www.ra-plutte.de/social-media-recht/">Social Media Recht</a></i>)
-				<hr>
-				Für das Führen eines soziales Netzwerks haben Gründer die Pflicht ein paar Rechtlichen Anforderungen zu erfüllen. Dies dient zur Datenschutz und Datensicherheit aller Betreiber ,Behörden und Unternehmen des soziales Netzwerks. Dazu zählt:<br>
-				<ul>
-					<li>Vertraulichkeit</li>
-					<li>Verfügbarkeit</li>
-					<li>Integrität</li>
-					<li>Nichtverkettbarkeit</li>
-					<li>Transparenz</li>
-					<li>Intervenierbarkeit</li>
-				</ul>
-				Alle oben genannte Anforderungen sind Bestandteile des Netzwerkdurchsetzungsgesetzes abgekürzt NetzDG. Die am 01.09.2017 Aktualisierung des NetzDG unterteilt dieses wiederum in mehreren unteren Gesetzen.
-				<ul>
-					<li>§1 Anwendungsbereich</li>
-					<li>§2 Berichtspflicht</li>
-				 	<li>§3 Umgang mit Beschwerden und rechtswidrige Inhalte</li>
-					<li>§4 Bußgeldvorschriften</li>
-					<li>§5 Inländischer Zustellungsbevollmächtigter</li>
-				</ul>
-				Damit die Schutzziele des NetzDG in Kraft kommen, müssen erstmal die Betreiber berechtigt sein sich auf die Plattform anzumelden, um unbefugten Datenmissbrauch zu mindern. Die Open Authorization abgekürzt OAuth ist ein offenes Standarprotokoll, das eine API- Autorisierung ermöglicht.Das Bedeutet die Datenermittlung zwischen verschiedenen Anwendungen, Benutzeroberflächen oder Webseiten.
-				<span class="last-updated">
-					aktualisiert am <b>28.10.2018</b>
-				</span>
-			</div>
-			<div class="content-block" id="architektur-content">
-				<span class="content-theme">
-					<label>Architekturkonzept</label>
-					<span class="info">Info</span>
-					<span class="aufgabe">Aufgabe</span>
-				</span>
-				Die alte Architektur von unserer Web-Applikation hat nur über einen einzigen Eingang ins System verfügt. Das heißt, bei jeder Anfrage wurde geprüft, ob der Benutzer autorisiert ist, falls nicht → wird der Benutzer auf Login-Seite redirected. Login bzw. Regisitrierungsteil war monolithisch mit der Applikation verbunden und könnte nicht wiederverwendet werden. 
-				<img class="content-img-l" src="github/archit_konzept_old.png">
-				In dem aktuellen Architekturkonzept haben wir besorgt, dass Security-Verfahren möglichst flexibel gestalten ist, sodass es mehrmals für verschiedene Zwecke verwendet werden könnte. Beispielweise möchten wir es ermöglichen, sich an externen Web-Applikation über unseren Security-Modul authentifizieren zu können (<a href="https://de.wikipedia.org/wiki/OAuth">OAuth2</a>, siehe unten). 
-
-				Für hohe Flexibilität wurden alle Security-bezogenen Zeuge in ein externes Modul ausgelagert. Die Kommunikation zwischen Security-Modul und der restlichen Logik findet über eine Schnittstelle statt. Dieser Betrachtungsweise ermöglicht die Verteilung von Aufgaben und Verantwortlichkeiten innerhalb von Entwicklerteam. Darüber hinaus haben wir den Code für Security Modul von PHP auf Java mit <a href="https://spring.io/projects/spring-security">Spring Security</a> umgeschrieben. Dies bietet unterschiedliche Designmuster und Konzepte für ein sicheres und zuverlässiges Security-verfahren an. Das Verschlüsseln von Passwörtern erfolgt mit <a href="https://de.wikipedia.org/wiki/Bcrypt">bcrypt Algorithmus</a>. 
-				<img class="content-img-l" src="github/archit_konzept_new.png">
-				Die restliche Logik ist ebenso auf Java Spring umgeschrieben und dies verfügt über eine <a href="https://de.wikipedia.org/wiki/Representational_State_Transfer">REST API</a> Schnittstelle, d. h. jeder Ressource ist mit seinem Bezeichner zu finden. Das ermöglicht mehrere Eingänge ins System, aber diesmal ist nicht die Authentifizierung zu prüfen, sondern die Zugriffsrechte/ Autorisierungsrechte. Die Zugriffsrechte in unserem System sind in 8 Schichten aufgeteilt (von 0 bis 7). Der nicht angemeldete Benutzer hat die Zugriffsrechte <b>0</b>, das heißt, er darf nur die Seiten angucken, die das <i>Permission</i> weniger als <b>1</b> haben, z.B. Login-/Registrierungsseite, Nichtprivate Accounts und Projekte von anderen Benutzern usw. Benutzer mit Zugriffsrechten <b>5</b> und <b>6</b> können die anderen Benutzer sperren/entsperren und die Einträge editieren/löschen. Die Benutzer mit den höchsten Zugriffsrechten <b>7</b> (Admin) verfügen über einen <i>Gott-Modus</i> im System. Die Authentifizierung mit Zugriffsrechten <b>> 5</b> (interne Mitarbeiter) erfolgt über <a href="https://de.wikipedia.org/wiki/Zwei-Faktor-Authentisierung">Zwei-Faktor-Authentisierung (2FA)</a>.
-				<span class="last-updated">
-					aktualisiert am <b>28.10.2018</b>
-				</span>
-			</div>
-			<div class="content-block" id="oauth-content">
-				<span class="content-theme">
-					<label>OAuth 2.0</label>
-					<span class="info">Info</span>
-					<span class="aufgabe">Aufgabe</span>
-				</span>
-				OAuth 2 ist ein Autorisierungsframework, mit dem eingeschränkten Zugriff auf Benutzerkonten in HTTP-Diensten gewährleistet wird. OAuth funktioniert auf originales Protokoll und unterstütz Web-, sowie Desktop- bzw. Mobile Applikationen.
-
-				<h2>Systemhierarchie und Konzept:</h2>
-				
-				<b>Kontoinhaber:</b> Benutzer
-				Der Benutzer autorisiert sein Konto. Der Zugriff einen Dienst auf dem Benutzerkonto ist beschränkt (lesende- oder schreibende Zugriff).
-				<br>
-				<b>Ressourcenserver und Autorisierungsserver: API</b>
-				Der Ressourcenserver speichert die geschützten Daten von Benutzerkonten und der Autorisierungsserver verifiziert die Authentizität der vom Benutzer bereitgestellten Informationen und erstellt dann Autorisierungstoken für die Anwendung, über die die Anwendung auf Benutzerdaten realisiert wird.
-				Aus Sicht des Anwendungsentwicklers führt die Service-API sowohl die Ressourcenserverrolle als auch die Autorisierungsserverrolle aus.
-				<br><b>Client: externer Service</b><br>
-				Applikation bzw. Dienst, die auf das Benutzerkonto zugreifen, muss vor dem Zugriff vom Benutzer autorisiert werden und die Autorisierung muss von der API kontrolliert werden.
-				<hr>
-				Die OAuth unterscheidet sich in vier verschiedene Rollen<br>
-				<ul>
-					<li>Resource Owner</li>
-					<li>Resource Serer</li>
-					<li>Client</li>
-					<li>Authorization Server</li>
-				</ul>
-				Weiterhin wird zwischen vier vordefinierten Genehmigungsprozessen (Grant Types) unterschieden, die in verschiedenen Anwendungsfällen zum Einsatz kommen:<br>
-				<ul>
-					<li>Autorisierungscode</li>
-					<li>Implizite Autorisierung</li>
-					<li>Passwortfreigabe durch den Resource Owner</li>
-					<li>Client-Berechtigung</li>
-				</ul>
-				<img class="content-img-l" src="github/OAuth2.jpg">
-				<span class="last-updated">
-					aktualisiert am <b>29.10.2018</b>
-				</span>
-			</div>
-			<div class="content-block" id="model-content">
-				<span class="content-theme">
-					<label>Modelierung</label>
-					<span class="info">info</span>
-				</span>
-				TODO
-				<span class="last-updated">
-					aktualisiert am <b>14.11.2018</b>
-				</span>
-			</div>
-			<div class="content-block" id="techn-ums-content">
-				<span class="content-theme">
-					<label>Technische umsetzung</label>
-					<span class="info">info</span>
-				</span>
-				TODO
-				<span class="last-updated">
-					aktualisiert am <b>14.11.2018</b>
-				</span>
-			</div>
-			<div class="content-block" id="pres-1-content">
-				<span class="content-theme">
-					<label>Praesentation 1</label>
-					<span class="file">file</span>
-				</span>
-				<a href="github/OAUTH UND AUTORISIERUNGSMODULE IN Service Oriented Architecture.pdf">
-					<p class="file-icon">
-						<span>OAuth und Autorisierungsmodule.pdf</span>
-					</p>
-				</a>
-				<span class="last-updated">
-					aktualisiert am <b>31.10.2018</b>
-				</span>
+				<div class="row border-bottom" id="auavid-thema-content">
+					<div class="col-12">
+						<span class="content-topic">
+							<h2 class="d-inline-block"><a href="https://github.com/rodchenk/foliage/issues/3" target="blanc">Thema (Auswahl von IT-Diensten)</a></h2>
+							<span class="ml-2 info">Info</span>
+							<span class="last-updated float-right">
+								aktualisiert am <b>14.10.2018</b>
+							</span>
+						</span>
+						<div class="content-body">
+							<a href="https://github.com/rodchenk/" target="blanc">Mischa</a> Beschreibung des Projektfokus und Motivation<br>
+							<a href="https://github.com/NickIvachshenko" target="blanc">Nikita</a> Entwicklung der Lieferantenanforderungen nach CMII-ACQ SSAD<br>
+							<a href="https://github.com/biggymat" target="blanc">Arsene</a> Lösungsempfehlung mit rationaler Begründung nach AHP<br>
+							<a href="https://github.com/pouahang" target="blanc">Ornella</a> Erhebung von Kundenanforderungen nach CMII-ACQ ARD
+						</div>
+					</div>
+				</div>
+				<div class="row border-bottom" id="auavid-focus-content">
+					<div class="col-12">
+						<span class="content-topic">
+							<h2 class="d-inline-block"><a href="https://github.com/rodchenk/foliage/issues/4" target="blanc">Projektfokus</a></h2>
+							<span class="ml-2 info">Info</span>
+							<span class="ml-2 external">Links</span>
+							<span class="last-updated float-right">
+								aktualisiert am <b>15.10.2018</b>
+							</span>
+						</span>
+						<div class="content-body">
+							<b>foliage</b> ist ein junges Start Up, welches es modernes soziales Netzwerk entwickelt. Der Focus liegt bei Projekten und Aktivitäten, die die Benutzer erstellen und in Teams weiterentwickeln können. Es handelt sich um ein evolutioniertes Ticketsystem, orientiert auf Studenten, Schüler und engagierte aktive Menschen. <br>
+							Im Rahmen von Auswahl und Anpassunge von IT-Diensten beschäftigen wir uns mit dem Problem der Sourcecode Verwaltung in der <a href="https://de.wikipedia.org/wiki/Microservices" target="blanc">Microservice Architektur</a>. Das Problem liegt daran, dass sich mehrere Entwickler mit den gleichen Modulen beschäftigen können. Ausserdem kann die Kommunikation zwischen einzelnen Modulen zu Konflikten führen, wenn Entwickler die Configuration von Schnittstellen unterschiedlich gestallten. <br>
+							<img src="github/arch.jpg" class="img-fluid">
+							Das Lösungskonzept ist die Benutzung von <a href="https://de.wikipedia.org/wiki/Versionsverwaltung" target="blanc">Version control systems</a> und die Unterteilung der Serverschicht auf Test- und Releaseserver. Dabei handlet es sich um die Anpassung von einem VC-Software, Erstellung von automatischen Tests und Releasefreigabe. <br>
+							Darüber hinaus haben wir vor, ein <a href="https://de.wikipedia.org/wiki/OAuth" target="blanc">OAuth-Service</a> und offene <a href="https://de.wikipedia.org/wiki/Programmierschnittstelle" target="blanc">API</a> zu erstellen, die wir frei für die anderen Entwickler bereitstellen, z.B. für die Entwicklung von mobilen Applikationen oder Authorisierungsverfahren in externen Webapplikationen über unser Service.
+							<img src="github/vcs.png" class="img-fluid">
+						</div>
+					</div>
+				</div>
+				<div class="row border-bottom" id="auavid-workshop-content">
+					<div class="col-12">
+						<span class="content-topic">
+							<h2 class="d-inline-block"><a href="#" target="blanc">Internationales Workshop</a></h2>
+							<span class="ml-2 file">File</span>
+							<span class="ml-2 info">Info</span>
+							<span class="last-updated float-right">
+								aktualisiert am <b>04.11.2018</b>
+							</span>
+						</span>
+						<div class="content-body">
+							<a href="github/workshop.pdf">
+								<p class="file-icon">
+									<span>Workshop Presentation.pdf</span>
+								</p>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="row border-bottom" id="auavid-ssad-content">
+					<div class="col-12">
+						<span class="content-topic">
+							<h2 class="d-inline-block"><a href="https://github.com/rodchenk/foliage/issues/8" target="blanc">SSAD und ARD Themen</a></h2>
+							<span class="ml-2 info">Info</span>
+							<span class="ml-2 aufgabe">Aufgabe</span>
+							<span class="last-updated float-right">
+								aktualisiert am <b>28.10.2018</b>
+							</span>
+						</span>
+						<div class="content-body">
+							<h4><a href="https://moodle.th-brandenburg.de/course/view.php?id=5227#section-4">CMMI Prozessgebiete</a></h4>
+							Fur unser Projekt sind folgende Themen relevant:<br>
+							<b>SSAD</b>
+							<ul>
+								<li>SP 1.1 Identify Potential Suppliers -> <a href="https://github.com/rodchenk">@rodchenk</a><br>
+								<li>SP 2.2 Establish Negotiation Plans -> <a href="https://github.com/NickIvachshenko">@NickIvachshenko</a><br>
+								<li>SP 2.3 Select Suppliers -> <a href="https://github.com/biggymat">@biggymat</a></li>
+								<li>SP 3.2 Establish Supplier Agreement -> <a href="https://github.com/pouahang">@pouahang</a></li>
+							</ul>
+							<b>ARD</b>
+							<ul>
+								<li>SP 1.2 Develop and Prioritize Customer Requirements -> <a href="https://github.com/biggymat">@biggymat</a></li>
+								<li>SP 3.1 Establish Operational Concepts and Scenarios -> <a href="https://github.com/rodchenk">@rodchenk</a></li>
+								<li>SP 3.3 Analyze Requirements to Achieve Balance -> <a href="https://github.com/NickIvachshenko">@NickIvachshenko</a></li>
+								<li>SP 3.4 Validate Requirements -> <a href="https://github.com/pouahang">@pouahang</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-	<div id="foot">
-		<!-- <span style="color: rgb(195,195,195)">Copyright. All rights reserved</span> -->
-		<span><label style="color: rgb(195,195,195)">Author: </label>Mischa Rodchenkov</span>
-		<span><label style="color: rgb(195,195,195)">Contact: </label>rodchenk@th-brandenburg.de</span>
-		<div id="thb"></div>
-		<span id="logo" style="float: right;margin-right: 0;margin-left: 0"></span>
+
+	<div id="dsus-container" class="container-fluid">
+		<div class="row">
+			<div class="side-bar bg-orange text-white">
+				<div class="sticky-top">
+					<span class="side-bar-topic">
+						<img src="github/dsus.png" width="120" height="120">
+						<span>Datenschutz und Sicherheit</span>
+					</span>
+					<div class="side-bar-themes">
+						<span id="dsus-team-bar" onclick="scrollToDiv(this, 'dsus-team-content')" class="side-bar-selected">
+							<i class="fas fa-address-book"></i> Team
+						</span>
+						<span id="dsus-thema-bar" onclick="scrollToDiv(this, 'dsus-thema-content')">
+							<i class="fas fa-feather-alt"></i> Thema
+						</span>
+						<span id="dsus-produkt-bar" onclick="scrollToDiv(this, 'dsus-produkt-content')">
+							<i class="fas fa-award"></i> Produkt
+						</span>
+						<span id="dsus-recht-bar" onclick="scrollToDiv(this, 'dsus-recht-content')">
+							<i class="fas fa-asterisk"></i> Rechtliche Rahmen
+						</span>
+						<span id="dsus-arch-bar" onclick="scrollToDiv(this, 'dsus-arch-content')">
+							<i class="fas fa-archway"></i></i> Architekturkonzept
+						</span>
+						<span id="dsus-oauth-bar" onclick="scrollToDiv(this, 'dsus-oauth-content')">
+							<i class="fas fa-pastafarianism"></i> OAuth 2.0
+						</span>
+						<span id="dsus-model-bar" onclick="scrollToDiv(this, 'dsus-model-content')">
+							<i class="fas fa-drafting-compass"></i> Modellierung
+						</span>
+						<span id="dsus-registr-bar" onclick="scrollToDiv(this, 'dsus-registr-content')">
+							<i class="fas fa-sign-in-alt"></i> Registrierung
+						</span>
+						<span id="dsus-umsetz-bar" onclick="scrollToDiv(this, 'dsus-umsetz-content')">
+							<i class="fab fa-simplybuilt"></i> Umsetzung
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="content col bg-white">
+				<div id="dsus-team-content" class="row border-bottom">
+					<div class="col-12">
+						<span class="content-topic">
+							<h2 class="d-inline-block"><a href="#" target="blanc">Team und Rollenverteilung</a></h2>
+							<span class="ml-2 info">Info</span>
+
+							<span class="last-updated float-right">
+								aktualisiert am <b>14.10.2018</b>
+							</span>
+						</span>
+						<div class="content-body">
+							<b>Mykhailo</b> -> Koordinator, technischer Expert<br>
+							<b>Nikita</b> ->  Protokollführer, Sprecher<br>
+							<b>Ornella</b> -> Mitarbeiterin
+						</div>
+					</div>
+				</div>
+				<div id="dsus-thema-content" class="row border-bottom">
+					<div class="col-12">
+						<span class="content-topic">
+							<h2 class="d-inline-block"><a href="#" target="blanc">Thema</a></h2>
+							<span class="ml-2 info">Info</span>
+
+							<span class="last-updated float-right">
+								aktualisiert am <b>14.10.2018</b>
+							</span>
+						</span>
+						<div class="content-body">
+							OAuth2 und Autorisierungs- und Authentificationsmodule in SOA am Beispiel von einem StartUp<br>
+							Verschlüsselungskonzepte der Benutzerdaten in Entwicklungspfase (im StartUp)
+						</div>
+					</div>
+				</div>
+				<div id="dsus-produkt-content" class="row border-bottom">
+					<div class="col-12">
+						<span class="content-topic">
+							<h2 class="d-inline-block"><a href="https://github.com/rodchenk/foliage/issues/9#issuecomment-433716548" target="blanc">Produkt</a></h2>
+							<span class="ml-2 info">Info</span>
+							<span class="ml-2 aufgabe">Aufgabe</span>
+
+							<span class="last-updated float-right">
+								aktualisiert am <b>28.10.2018</b>
+							</span>
+						</span>
+						<div class="content-body">
+							Wir entwickeln ein projekt-, aktiviatäts- und zeitmanagementorientiertes soziales Netzwerk, das eine Alternative zum klassischen Ticketsystem (z. B. JIRA) darstellt. Es orientiert sich vor allem auf die jungen engagierten Menschen und nicht auf die Unternehmen. Da wir eine hohe Zahl von Benutzern erwarten, stellt sich die Frage, wie die Datensicherheit und der Datenschutz im Unternehmen bzw. im Netz gestaltet werden sollte. Darüber hinaus hat das deutsche/europäische Gesetz eigene Anforderungen, was die sozialen Netze betrifft.
+						</div>
+					</div>
+				</div>
+				<div id="dsus-recht-content" class="row border-bottom">
+					<div class="col-12">
+						<span class="content-topic">
+							<h2 class="d-inline-block"><a href="#" target="blanc">Rechtliche Anforderungen</a></h2>
+							<span class="ml-2 info">Info</span>
+							<span class="ml-2 aufgabe">Aufgabe</span>
+
+							<span class="last-updated float-right">
+								aktualisiert am <b>28.10.2018</b>
+							</span>
+						</span>
+						<div class="content-body">
+							<b><a href="https://dejure.org/gesetze/TMG/5.html">TMG § 5 Allgemeine Informationspflichten</a></b>
+							<br>
+							Dabei gilt es auch zu beachten, dass das Impressum mit maximal zwei Klicks erreichbar sein sollte, um die gesetzliche Vorgabe für ein „unmittelbar erreichbares“ Impressum nach dem Telemediengesetz § 5  zu gewährleisten.<br>
+							<b><a href="">TMG § 13 Pflichten des Diensteanbieters</a></b><br>
+							Der Diensteanbieter hat den Nutzer zu Beginn des Nutzungsvorgangs über Art, Umfang und Zwecke der Erhebung und Verwendung personenbezogener Daten sowie über die Verarbeitung seiner Daten in Staaten außerhalb des Anwendungsbereichs der Richtlinie 95/46/EG des Europäischen Parlaments und des Rates vom 24. Oktober 1995 zum Schutz natürlicher Personen bei der Verarbeitung personenbezogener Daten und zum freien Datenverkehr (ABl. EG Nr. L 281 S. 31) in allgemein verständlicher Form zu unterrichten, sofern eine solche Unterrichtung nicht bereits erfolgt ist. 2Bei einem automatisierten Verfahren, das eine spätere Identifizierung des Nutzers ermöglicht und eine Erhebung oder Verwendung personenbezogener Daten vorbereitet, ist der Nutzer zu Beginn dieses Verfahrens zu unterrichten. 3Der Inhalt der Unterrichtung muss für den Nutzer jederzeit abrufbar sein.<br>
+							<b><a href="https://dejure.org/gesetze/KunstUrhG/22.html">UrhG § 22</a></b><br>
+							Gesetz betreffend das Urheberrecht an Werken der bildenden Künste und der Photographie<br>
+							TMG, TKG usw.
+							(<i><a href="https://www.ra-plutte.de/social-media-recht/">Social Media Recht</a></i>)
+							<hr>
+							Für das Führen eines soziales Netzwerks haben Gründer die Pflicht ein paar Rechtlichen Anforderungen zu erfüllen. Dies dient zur Datenschutz und Datensicherheit aller Betreiber ,Behörden und Unternehmen des soziales Netzwerks. Dazu zählt:<br>
+							<ul>
+								<li>Vertraulichkeit</li>
+								<li>Verfügbarkeit</li>
+								<li>Integrität</li>
+								<li>Nichtverkettbarkeit</li>
+								<li>Transparenz</li>
+								<li>Intervenierbarkeit</li>
+							</ul>
+							Alle oben genannte Anforderungen sind Bestandteile des Netzwerkdurchsetzungsgesetzes abgekürzt NetzDG. Die am 01.09.2017 Aktualisierung des NetzDG unterteilt dieses wiederum in mehreren unteren Gesetzen.
+							<ul>
+								<li>§1 Anwendungsbereich</li>
+								<li>§2 Berichtspflicht</li>
+							 	<li>§3 Umgang mit Beschwerden und rechtswidrige Inhalte</li>
+								<li>§4 Bußgeldvorschriften</li>
+								<li>§5 Inländischer Zustellungsbevollmächtigter</li>
+							</ul>
+							Damit die Schutzziele des NetzDG in Kraft kommen, müssen erstmal die Betreiber berechtigt sein sich auf die Plattform anzumelden, um unbefugten Datenmissbrauch zu mindern. Die Open Authorization abgekürzt OAuth ist ein offenes Standarprotokoll, das eine API- Autorisierung ermöglicht.Das Bedeutet die Datenermittlung zwischen verschiedenen Anwendungen, Benutzeroberflächen oder Webseiten.
+						</div>
+					</div>
+				</div>
+				<div id="dsus-arch-content" class="row border-bottom">
+					<div class="col-12">
+						<span class="content-topic">
+							<h2 class="d-inline-block"><a href="#" target="blanc">Architekturkonzept</a></h2>
+							<span class="ml-2 info">Info</span>
+							<span class="ml-2 aufgabe">Aufgabe</span>
+
+							<span class="last-updated float-right">
+								aktualisiert am <b>28.10.2018</b>
+							</span>
+						</span>
+						<div class="content-body">
+							Die alte Architektur von unserer Web-Applikation hat nur über einen einzigen Eingang ins System verfügt. Das heißt, bei jeder Anfrage wurde geprüft, ob der Benutzer autorisiert ist, falls nicht → wird der Benutzer auf Login-Seite redirected. Login bzw. Regisitrierungsteil war monolithisch mit der Applikation verbunden und könnte nicht wiederverwendet werden.
+							<img class="img-fluid" src="github/archit_konzept_old.png">
+							In dem aktuellen Architekturkonzept haben wir besorgt, dass Security-Verfahren möglichst flexibel gestalten ist, sodass es mehrmals für verschiedene Zwecke verwendet werden könnte. Beispielweise möchten wir es ermöglichen, sich an externen Web-Applikation über unseren Security-Modul authentifizieren zu können (<a href="https://de.wikipedia.org/wiki/OAuth">OAuth2</a>, siehe unten).
+
+							Für hohe Flexibilität wurden alle Security-bezogenen Zeuge in ein externes Modul ausgelagert. Die Kommunikation zwischen Security-Modul und der restlichen Logik findet über eine Schnittstelle statt. Dieser Betrachtungsweise ermöglicht die Verteilung von Aufgaben und Verantwortlichkeiten innerhalb von Entwicklerteam. Darüber hinaus haben wir den Code für Security Modul von PHP auf Java mit <a href="https://spring.io/projects/spring-security">Spring Security</a> umgeschrieben. Dies bietet unterschiedliche Designmuster und Konzepte für ein sicheres und zuverlässiges Security-verfahren an. Das Verschlüsseln von Passwörtern erfolgt mit <a href="https://de.wikipedia.org/wiki/Bcrypt">bcrypt Algorithmus</a>.
+							<img class="img-fluid" src="github/archit_konzept_new.png">
+							Die restliche Logik ist ebenso auf Java Spring umgeschrieben und dies verfügt über eine <a href="https://de.wikipedia.org/wiki/Representational_State_Transfer">REST API</a> Schnittstelle, d. h. jeder Ressource ist mit seinem Bezeichner zu finden. Das ermöglicht mehrere Eingänge ins System, aber diesmal ist nicht die Authentifizierung zu prüfen, sondern die Zugriffsrechte/ Autorisierungsrechte. Die Zugriffsrechte in unserem System sind in 8 Schichten aufgeteilt (von 0 bis 7). Der nicht angemeldete Benutzer hat die Zugriffsrechte <b>0</b>, das heißt, er darf nur die Seiten angucken, die das <i>Permission</i> weniger als <b>1</b> haben, z.B. Login-/Registrierungsseite, Nichtprivate Accounts und Projekte von anderen Benutzern usw. Benutzer mit Zugriffsrechten <b>5</b> und <b>6</b> können die anderen Benutzer sperren/entsperren und die Einträge editieren/löschen. Die Benutzer mit den höchsten Zugriffsrechten <b>7</b> (Admin) verfügen über einen <i>Gott-Modus</i> im System. Die Authentifizierung mit Zugriffsrechten <b>> 5</b> (interne Mitarbeiter) erfolgt über <a href="https://de.wikipedia.org/wiki/Zwei-Faktor-Authentisierung">Zwei-Faktor-Authentisierung (2FA)</a>.
+						</div>
+					</div>
+				</div>
+				<div id="dsus-oauth-content" class="row border-bottom">
+					<div class="col-12">
+						<span class="content-topic">
+							<h2 class="d-inline-block"><a href="#" target="blanc">OAuth 2.0</a></h2>
+							<span class="ml-2 info">Info</span>
+							<span class="ml-2 aufgabe">Aufgabe</span>
+
+							<span class="last-updated float-right">
+								aktualisiert am <b>29.10.2018</b>
+							</span>
+						</span>
+						<div class="content-body">
+							OAuth 2 ist ein Autorisierungsframework, mit dem eingeschränkten Zugriff auf Benutzerkonten in HTTP-Diensten gewährleistet wird. OAuth funktioniert auf originales Protokoll und unterstütz Web-, sowie Desktop- bzw. Mobile Applikationen.
+
+							<h4 class="text-center mt-1">Systemhierarchie und Konzept:</h4>
+
+							<b>Kontoinhaber:</b> Benutzer
+							Der Benutzer autorisiert sein Konto. Der Zugriff einen Dienst auf dem Benutzerkonto ist beschränkt (lesende- oder schreibende Zugriff).
+							<br>
+							<b>Ressourcenserver und Autorisierungsserver: API</b>
+							Der Ressourcenserver speichert die geschützten Daten von Benutzerkonten und der Autorisierungsserver verifiziert die Authentizität der vom Benutzer bereitgestellten Informationen und erstellt dann Autorisierungstoken für die Anwendung, über die die Anwendung auf Benutzerdaten realisiert wird.
+							Aus Sicht des Anwendungsentwicklers führt die Service-API sowohl die Ressourcenserverrolle als auch die Autorisierungsserverrolle aus.
+							<br><b>Client: externer Service</b><br>
+							Applikation bzw. Dienst, die auf das Benutzerkonto zugreifen, muss vor dem Zugriff vom Benutzer autorisiert werden und die Autorisierung muss von der API kontrolliert werden.
+							<hr>
+							Die OAuth unterscheidet sich in vier verschiedene Rollen<br>
+							<ul>
+								<li>Resource Owner</li>
+								<li>Resource Serer</li>
+								<li>Client</li>
+								<li>Authorization Server</li>
+							</ul>
+							Weiterhin wird zwischen vier vordefinierten Genehmigungsprozessen (Grant Types) unterschieden, die in verschiedenen Anwendungsfällen zum Einsatz kommen:<br>
+							<ul>
+								<li>Autorisierungscode</li>
+								<li>Implizite Autorisierung</li>
+								<li>Passwortfreigabe durch den Resource Owner</li>
+								<li>Client-Berechtigung</li>
+							</ul>
+							<img class="img-fluid" src="github/OAuth2.jpg">
+						</div>
+					</div>
+				</div>
+				<div id="dsus-model-content" class="row border-bottom">
+					<div class="col-12">
+						<span class="content-topic">
+							<h2 class="d-inline-block"><a href="#" target="blanc">Modelierung</a></h2>
+							<span class="ml-2 info">Info</span>
+
+							<span class="last-updated float-right">
+								aktualisiert am <b>14.11.2018</b>
+							</span>
+						</span>
+						<div class="content-body">
+							Wie auf der unteren Abbildung abgebildet ist, haben wir das Authorization Module als komlett unabhängiges Service ausgelagert. Dies ermöglichst
+							die Wiederverwendung von Authorizationsfunktionalitäten. Darüber hinaus gibt es weitere Vorteile wie z.B. die Arbeitsverteilung, erweiterte Sicherheitsfaktoren
+							und die Unabhängigkeit von Applikationslogik.
+							<img class="img-fluid" src="github/tokens.png" />
+						</div>
+					</div>
+				</div>
+				<div id="dsus-registr-content" class="row border-bottom">
+					<div class="col-12">
+						<span class="content-topic">
+							<h2 class="d-inline-block"><a href="#" target="blanc">Registrierung</a></h2>
+							<span class="ml-2 info">Info</span>
+
+							<span class="last-updated float-right">
+								aktualisiert am <b>14.11.2018</b>
+							</span>
+						</span>
+						<div class="content-body">
+							Before andere Applikationen unser Authorizationmodule verwenden können, müssen sie sich zuerst in unserem Entwicklerportal registrieren. Wir haben eine separate
+							Datenbank, wo diese Angaben gespeichert werden. Die Struktur siehr folgendermassen aus:
+							<table cellspacing="0" border="1" cellpadding="5" style="border-color: transparent; margin: auto;">
+								<tr style="background-color: #1a1a1a;	color: white">
+									<th>app_id</th>
+									<th>app_name</th>
+									<th>reg_at</th>
+								</tr>
+								<tr>
+									<th>5235</th>
+									<th>Google</th>
+									<th>1542283375879</th>
+								</tr>
+								<tr>
+									<th>2340</th>
+									<th>THB</th>
+									<th>1542283400585</th>
+								</tr>
+								<tr>
+									<th>4327</th>
+									<th>Facebook</th>
+									<th>1542283400481</th>
+								</tr>
+								<tr>
+									<th>3299</th>
+									<th>foliage</th>
+									<th>1542283430509</th>
+								</tr>
+							</table>
+							Die folgende Tabelle zeigt auf welche privaten Inforamtionen die jeweilige Applikation zugreiffen darf, oder anders zu sagen -> welche Daten die Applikationen
+							als Response bekommen wird.
+							<table cellspacing="0" border="1" cellpadding="5">
+								<tr style="background-color: #1a1a1a;	color: white">
+									<th>app_id</th>
+									<th>data_id</th>
+								</tr>
+								<tr>
+									<th>3299</th>
+									<th>1</th>
+								</tr>
+								<tr>
+									<th>3299</th>
+									<th>2</th>
+								</tr>
+								<tr>
+									<th>3299</th>
+									<th>3</th>
+								</tr>
+								<tr>
+									<th>4327</th>
+									<th>1</th>
+								</tr>
+							</table>
+							Und die Tabelle mit Daten und jeweiligen IDs:
+							<table cellspacing="0" border="1" cellpadding="5">
+								<tr style="background-color: #1a1a1a;	color: white">
+									<th>data_id</th>
+									<th>data_name</th>
+								</tr>
+								<tr>
+									<th>1</th>
+									<th>firstname</th>
+								</tr>
+								<tr>
+									<th>2</th>
+									<th>lastname</th>
+								</tr>
+								<tr>
+									<th>3</th>
+									<th>photos</th>
+								</tr>
+								<tr>
+									<th>4</th>
+									<th>friends</th>
+								</tr>
+							</table>
+							Nach der Registrierung bekommt die externe Applikationen einen einzigartigen <b>app_id</b>, die dann von ihrer Seite als Pflichtparameter übergeben wird,
+							damit die API die Anfrage validieren könnte.
+							Diese Anfragen müssen dann wie folgt aussehen: <br>
+							<i>api.foliage.com/login/?app_id=&#60;app_id&#62;</i>
+						</div>
+					</div>
+				</div>
+				<div id="dsus-umsetz-content" class="row border-bottom">
+					<div class="col-12">
+						<span class="content-topic">
+							<h2 class="d-inline-block"><a href="#" target="blanc">Technische umsetzung</a></h2>
+							<span class="ml-2 info">Info</span>
+
+							<span class="last-updated float-right">
+								aktualisiert am <b>14.11.2018</b>
+							</span>
+						</span>
+						<div class="content-body">
+							Unsere API bietet momentat drei Methoden an:
+							<ul style="list-style-type: none;">
+								<li>api.foliage.com/login</li>
+								<li>api.foliage.com/prolongate</li>
+								<li>api.foliage.com/logout</li>
+							</ul>
+							Wenn ein auf <b>foliage</b> registrierter Benutzer auf einer externen Webseite/Applikation anmelden möchte und das jeweilige Service bietet diese Möglichkeit an,
+							dann clickt der Benutzer auf das Button <b>Anmelden über foliage</b>. <br>
+							Die Applikationen führt ein Redirect aus auf folgendes URL: <br>
+							<u>api.foliage.com/auth/login/?app_id=&#60;app_id&#62;&redirect_uri=&#60;redirect_uri&#62; </u> <br>
+							Die API prüft die Identität der Anfrage und der Client-Applikation und lädt die eigene Login-Seite. Der Benutzer gibt sein Benutzername und Password ein,
+							bestätigt, dass er den Zugriff auf die aufgelistete Daten erlaubt und clickt auf <b>Anmelden</b>. <br>
+							Die Anmeldedaten werden an die API gesendet, und von da an Authorizationmodule. Wenn die Anmeldung erfolgreich war, liefert die API eine JSON-Datei zurück: <br>
+							{<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;"status" : 			true,<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;"access_token" : 	&#60;access_token&#62;,<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;"expires_at" : 		86400,<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;"refresh_token" : 	&#60;refresh_token&#62;,<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;"user" : {<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	"name" : 	&#60;name&#62;,<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	"photo" : 	&#60;photo&#62;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+							}<br>
+							Danach wird der Benutzer zurück redirected auf URL, was oben im ersten Befehl stand (redirect_uri=&#60;redirect_uri&#62;)<br>
+							<b>
+								&#60;redirect_uri&#62;?access_token=&#60;access_token&#62;&refresh_token=&#60;refresh_token&#62;&expires_at=86400&name=&#60;name&#62;&photo=&#60;photo_url&#62;
+							</b>
+							Der generierte Token ist 86400s gültig, danach muss sich der Benutzer entweder neu anmelden oder die Client-Applikation kann das automation mithilfe von <b>refresh_token</b>
+							durchführen. Die automatische Verlängerung von <b>access_token</b> kann durch den Aufruf von der Methode api.foliage.com/prolongate durchgeführt werden. Die Anfrage an
+							API soll folgendermaßen aussehen: <br>
+							<b>
+								api.foliage.com/prolongate?refresh_token=&#60;refresh_token&#62;&access_token=&#60;access_token&#62;
+							</b><br>
+							Als Response bekommt man:<br>
+							{<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;"status" : true,<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;"access_token" : &#60;access_token&#62;,<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;"refresh_token" : &#60;refresh_token&#62;<br>
+							}<br>
+							Auf der Seite von Authorisierungsmodule gibt es dann folgende DB-Tabellen:
+							<table cellspacing="0" border="1" cellpadding="5">
+								<tr style="background-color: #1a1a1a;	color: white">
+									<th>app_id</th>
+									<th>user_id</th>
+									<th>access_token</th>
+									<th>refresh_token</th>
+									<th>expires_at</th>
+								</tr>
+								<tr>
+									<th>3299</th>
+									<th>3243</th>
+									<th>NKFJD6FSK3</th>
+									<th>dsdcGJHG6_D</th>
+									<th>154228324235</th>
+								</tr>
+								<tr>
+									<th>3299</th>
+									<th>5432</th>
+									<th>SDKBkj7HK</th>
+									<th>DBJhBU7gi7</th>
+									<th>1542283400235</th>
+								</tr>
+								<tr>
+									<th>2348</th>
+									<th>23445</th>
+									<th>KFVNKJnkj78g</th>
+									<th>SBJbjs6sgvV</th>
+									<th>1542283400523</th>
+								</tr>
+							</table>
+							Das Authorisationsmodule hat alle notwendigen Informationen, wo und wer angemeldet ist. Das ermöglicht ein Logout von allen oder bestimmten Applikationen durch das
+							Löschen von <b>access_token</b> und <b>refresh_token</b>.<br>
+							<ul style="list-style-type: none;">
+								<li style="background-color: lightpink; display: inline; padding: 4px; border-radius: 4px"><b>UPDATE</b> table <b>SET</b> refresh_token = NULL, access_token = NULL <b>WHERE</b> user_id = 3243;</li>
+							</ul>
+							Offene Fragen:
+							<ul style="list-style-type: none;">
+								<li>Wie oft und wie kann die Client-Applikation die Gültigkeit des Token prüefen?</li>
+								<li>Wie soll das refresh_token funktionieren? Z.B. wenn der Benutzer ausgeloggt ist.</li>
+								<li>Wie kann die Client-App feststellen, dass es um einen und den selben Benutzer geht? Z.B. nach dem Logout und erneuten Login.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
+	<!-- new version end -->
+	<footer class="container-fluid bg-gray-dark text-light">
+		<div class="container-fluid text-left" style="padding-top: 20px; padding-bottom: 20px; font-size: .9em">
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-3">
+					<div class="row">
+						<div class="col-md-12 text-secondary">
+							<h1 style="margin-left: 40px" class="text-info">Team</h1>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 text-left" style="font-weight: 100">
+							<ul style="list-style-type: none;">
+								<li>
+									<a class="text-white" href="https://github.com/rodchenk/">Mykhailo Rodchenkov</a>
+								</li>
+								<li>
+									<a class="text-white" href="#">Nikita Ivachshenko</a>
+								</li>
+								<li>
+									<a class="text-white" href="#">Ornella Pouaha</a>
+								</li>
+								<li>
+									<a class="text-white" href="#">Arsene Tresor</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="row">
+						<div class="col-md-12 text-secondary">
+							<h1 style="margin-left: 40px" class="text-info">Links</h1>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<ul class="text-left" style="font-weight: 100; list-style-type: none">
+								<li>
+									<a class="text-white" href="#">Terms</a>
+								</li>
+								<li>
+									<a class="text-white" href="#">Privacy</a>
+								</li>
+								<li>
+									<a class="text-white" href="#">Contact</a>
+								</li>
+								<li>
+									<a class="text-white" href="#">Blog</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="row">
+						<div class="col-md-12 text-secondary">
+							<h1 class="text-info">Social</h1>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<a class="text-white" href="#"><i class="fab fa-2x fa-facebook-square" style="padding: 4px"></i></a>
+						
+							<a class="text-white" href="#"><i class="fab fa-2x fa-github-square" style="padding: 4px"></i></a>
+						
+							<a class="text-white" href="#"><i class="fab fa-2x fa-twitter-square" style="padding: 4px"></i></a>
+								
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 margin-top-15">
+							<b class="text-secondary">Author: </b> <span style="font-weight: 100">rodchenk@th-brandenburg.de</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2 container-center">
+					<div class="row" style="margin-top: 15px">
+						<div class="col-md-12">
+							<img src="github/thb.png" class="img-fluid" style="filter: brightness(100);">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<img src="github/logo.png" class="img-fluid">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
