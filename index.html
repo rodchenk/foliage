@@ -226,7 +226,7 @@
 							<span class="ml-2 info">Info</span>
 							<span class="ml-2 aufgabe">Aufgabe</span>
 							<span class="last-updated float-right">
-								aktualisiert am <b>28.10.2018</b>
+								aktualisiert am <b>25.11.2018</b>
 							</span>
 						</span>
 						<div class="content-body">
@@ -246,6 +246,146 @@
 								<li>SP 3.3 Analyze Requirements to Achieve Balance -> <a href="https://github.com/NickIvachshenko">@NickIvachshenko</a></li>
 								<li>SP 3.4 Validate Requirements -> <a href="https://github.com/pouahang">@pouahang</a></li>
 							</ul>
+							<hr>
+							<div>
+								<h2 class="d-inline-block">
+									<a href="#">Identify Potential Suppliers (CMMI SSAD SP 1.1)</a>
+								</h2>
+								<span class="text-light float-right d-inline-block bg-dark" style="padding: 2px;font-size: 13px;border-radius: 2px;">Mykhailo Rodchenkov</span><br>
+							</div>
+							<h4 class="text-info ml-4">Develop a list of potential suppliers</h4>
+							<div class="row">
+								<div class="col-md-6">
+									<ul style="list-style-type: none;">
+										<li><span class="badge badge-primary badge-pill">1</span> Amazon Web Services 	(aws.amazon.com)</li>
+										<li><span class="badge badge-primary badge-pill">2</span> Microsoft Azure		(azure.microsoft.com)</li>
+										<li><span class="badge badge-primary badge-pill">3</span> Google App Engine		(appengine.google.com)</li>
+										<li><span class="badge badge-primary badge-pill">4</span> Google Cloud Platform (cloud.google.com)</li>
+										<li><span class="badge badge-primary badge-pill">5</span> Joyent				(joyent.com, by Samsung)</li>
+									</ul>
+								</div>
+								<div class="col-md-6">
+									<ul style="list-style-type: none;">
+										<li><span class="badge badge-primary badge-pill">6</span> IBM Cloud Computing	(ibm.com/cloud)</li>
+										<li><span class="badge badge-primary badge-pill">7</span> Apache CloudStack 	(cloudstack.apache.com)</li>
+										<li><span class="badge badge-primary badge-pill">8</span> Kahu 					(lightcrest.com, by Lightcrest)</li>
+										<li><span class="badge badge-primary badge-pill">9</span> Platform9 			(platform9.com)</li>
+										<li><span class="badge badge-primary badge-pill">10</span> KeyInfo 				(keyinfo.com)</li>
+									</ul>
+								</div>
+							</div>
+							Bei dem Umstieg auf Microservice Architektur wurde entschieden, die Microservices im Cloud zu deployen. Basierend auf den Anforderungen an Cloud-Dienste, wurden aus der Liste vier Cloudanbieter herausgearbeitet (Amazon Web Services, Microsoft Azure, Joyent, Kahu). In der unteren Tabelle sind diese Anbieter und ihre Eigenschaften detaliert dargestellt. 
+							<table class="table table-hover text-center">
+							  	<thead class="thead-dark">
+								    <tr>
+								      <th scope="col">Kriterium</th>
+								      <th scope="col">Amazon Web Services</th>
+								      <th scope="col">Microsoft Azure</th>
+								      <th scope="col">Joynet</th>
+								      <th scope="col">Lightcrest</th>
+								    </tr>
+								</thead>
+								<tbody>
+							    	<tr>
+								      	<th scope="row">Preis</th>
+								      	<td>Pay-as-you-go, ab <b>$2,430.90</b> (for a scalable app in containers)</td>
+								      	<td>Pay-as-you-go, ab VMs <b>$0.008/h</b>, App Service <b>$0.013/h</b>, Azure SQL <b>$0.021/h</b></td>
+								      	<td>Pay-as-you-go, ab <b>$1,296.13</b> (for a scalable app in containers)</td>
+								      	<td>K1: <b>$1,265.25</b>, K2: <b>$2,536.28</b>, K3: <b>$3,619.4</b>7, K4: <b>$3,162.25</b>, K5: <b>$5,349.33</b>, K6: <b>$7,033.48</b></td>
+								    </tr>
+								    <tr>
+								      	<th scope="row">Abrechnungsmodel</th>
+										<td>monatlich</td>
+									    <td>monatlich</td>
+									    <td>monatlich</td>
+									    <td>monatlich</td>
+								    </tr>
+								    <tr>
+									    <th scope="row">Cloud-Typ</th>
+									    <td>hybrid</td>
+									    <td>hybrid</td>
+									    <td>public</td>
+									    <td>hybrid und private</td>
+								    </tr>
+								    <tr>
+									    <th scope="row">Unternehmensgrösse</th>
+									    <td>gross</td>
+									    <td>gross</td>
+									    <td>mittel (125 Mitarbeiter)</td>
+									    <td>klein (unter 50 Mitarbeiter)</td>
+								    </tr>
+								    <tr>
+									    <th scope="row">Weitere Dienste</th>
+									    <td>S3 (starage), EC2 (Virtual Servers), RDS/ DynamoDB/ Aurora für Datenbanken</td>
+									    <td>Machine Lerning, SQL Azure, Kubernets (administration, deployment)</td>
+									    <td>Node.js, Converged Analytics, Multi-Cloud Kubernetes, Container and VMs</td>
+									    <td>DevOps on Demand, Source Control, Full-Stack Engineering, Security Tools</td>
+								    </tr>
+								    <tr>
+									    <th scope="row">Kunden</th>
+									    <td>RyanAir, Atlassian, Siemens, Adobe, vodafone</td>
+									    <td>HP, Adobe, Bing, Shell, Siemens, Allianz</td>
+									    <td>Dell, Samsung, Iron.io, HashiCorp, opbeat</td>
+									    <td>WonderHowTo, Tweak, Walks of Italy, ATCO Software</td>
+								    </tr>
+								    <tr>
+									    <th scope="row">Auf dem Markt seit</th>
+									    <td>Anfang 2006</td>
+									    <td>Februar 2010</td>
+									    <td>Ende 2004</td>
+									    <td>2012</td>
+								    </tr>
+								    <tr>
+									    <th scope="row">Kundenzufriedenheit</th>
+									    <td>96%</td>
+									    <td>98%</td>
+									    <td>keine Daten</td>
+									    <td>92%</td>
+								    </tr>
+								    <tr>
+									    <th scope="row">Uptime</th>
+									    <td>von 99.00% bis 99.99%</td>
+									    <td>99.99%</td>
+									    <td>bis 100%</td>
+									    <td>keine Daten</td>
+								    </tr>
+								    <tr>
+									    <th scope="row">Weitere Vorteile</th>
+									    <td>Unterstüzung von Ubuntu Server, CentOS, Microsoft Windows Server, Apache, Nginx, Open VPN, SSH</td>
+									    <td>Trainings, dezentralisierte Infrastruktur, Logging und Metrics</td>
+									    <td>Open Source, Gründer von Node.js, Container Native</td>
+									    <td>Geeignet für StartUps und kleine Unternhmen</td>
+								    </tr>
+							  	</tbody>
+							</table>
+							<h4 class="text-info mt-2 ml-4">Communicate with potential suppliers concerning the forthcoming solication</h4>
+							Wir haben mit jedem der vier ausgewählten Cloud-Anbieter Online-Kontakt aufgenommen und über nähere Informationen komminiziert. Dies hat uns weitergeholfen, eine mögliche Zusammenarbeit basierend auf den repräsentierten Angeboten vorzustellen. Die letzten zwei Anbieter (Joynet und Kahu) zeigen wesentlich mehr Interesse an der Zusammenarbeit als AWS und Microsoft Azure. Die Anbieter haben jeweils ein Angebot für uns erstellt.
+							<h4 class="text-info mt-2 ml-4">Verify participants who will evaluate supplier proposals</h4>
+							Die vorgestellten Angebote werden zunächst von IT-Abteilung in einer kleinen Runde von allen Entwicklern diskutiert und bewertet. Anschliessend wird der Techlead die restlichen Aspekte mit Finanzabteilung besprechen und am Ende wird die Schlussfolgerung gezogen. Die Entscheidung wird letztendlich von dem Techlead zusammen mit dem Finanzleiter getroffen.
+							<h4 class="text-info mt-2 ml-4">Verify participants in supplier negotiations</h4>
+							Die Verantwortlichkeit für evenuelle Planänderungen und Abweichungen in der Architektur- und Entwicklungskonzept trägt der IT-Architekt. Bei solchen Fällen ist es mit Techlead dringend zu kommunizieren. Der Techlead trägt die restliche Verantwortung sowohl für technische als auch preisliche Aspekte. 
+							<hr>
+							<div>
+								<h2 class="d-inline-block">
+									<a href="#">Establish Operational Concepts and Scenarios (CMMI ARD  SP 3.1)</a>
+								</h2>
+								<span class="text-light float-right d-inline-block bg-dark" style="padding: 2px;font-size: 13px;border-radius: 2px;">Mykhailo Rodchenkov</span><br>
+							</div>
+							<h4 class="text-info mt-2 ml-4">Develop operational concepts and scenarios that include operations, installation, maintaince, support and disposal as appropriate</h4>
+							Beim Umbau einer monolitischen Architektur in eine lose gekoppelte Architektur entstehen viele technische und organisatorische Vorteile, wie z.B. höhere Sicherheit, lose Kopplung von Komponenten und als Konsequenz -- einfacheres Testen und Entwicklung von Modulen. Die Module werde in Services separiert, sie besitzen eigene Aufgabe und arbeiten unabhängig, aber sie sind mit den anderen Modulen verbunden. Die Kommunikation zwischen den Diensten erfolgt via HTTP Request oder Message Queue. Bei der Einführung von Microservice Architektur wurde eine Systematische Refactoring-Strategie verwendet, um sie möglichst fehlerfrei gestallten zu können. 
+							<ul>
+								<li>Zuerst werden die neuen Funktionalitäten nicht mehr innerhalb von monolithischer Anwendung entwickelt, sondern werden in komplett eigenständige Microservices umgesetzt. Dieses Service wird unabhängig von der Hauptanwendung entwickelt, bereitgestellt und skaliert. </li>
+								<li>Im nächsten Schritt werden die GUI (Benutzerschicht) und der Anwendungsschicht (Bussines Logic Layer) separiert. Danach können beide Schichte selbständig entwickelt werden. Ab diesem Schritt kann das Entwicklerteam eventuell aufgeteilt werden, da es nun nicht mehr um eine grosse Anwendung handelt, sondern um zwei (oder mehr) kleinere Module. </li>
+								<li>Anschliessend werden die restlichen Komponenten der monolitischen Anwendung in Microservices umgebaut. Dabei müssen die Entwickler die bestehenden Module extrahieren. Der Komplexitätsgrad kann dabei sehr hoch sein und deswegen müssen die Entwickler zuerst mit dem Modul starten, dessen Extraktion am einfachsten ist oder bei dessen Extraktion der grösste Mehrwert entsteht.</li>
+							</ul>	
+							Für die Instandhaltung von Microservices bieten die Cloudanbieter etablierte Docker- und Kubernetes-Technologien. Das erlaubt es, den Remote Service effektiv sowie effizient in eine neue Generation zu führen und somit die Fernwartung und Instandhaltung zu optimieren.
+							Das Deployment von Anwendung im Cloud wird mittels Anbietertools (CodeDeploy bei Amazon, Azure App Service bei Microsoft usw.) und mit "Pipelines" (YAML) durchgeführt.
+							<h4 class="text-info mt-2 ml-4">Define the environment in which the product will operate, including boundaries and constaints</h4>
+							Das Cloud wird in drei Nutzungsszenarien aufgeteilt: Entwicklungs-, Test- und Deploymentumgebung. Dies hat eine Reihe von Vorteilen, wie z.B. Bedürfnissanpassung, Kostenerspranis und schnelle Einrichtung. Der Hauptgrund ist die vollständige Trennung von Test- und Entwicklungsumgebung. Dadurch soll potentieller Schaden für den produktiven Betrieb vermieden werden. 
+							<h4 class="text-info mt-2 ml-4">Review operational concepts and scanarios to refine and discover requirements</h4>
+							Das Betriebskonzept wurde überprüft und darauf bezogen wurde eine Liste von Anforderungen erfasst. Dies enthält organisatorische sowie technische Anforderungen. Zu den organisatorischen und finanziellen Anforderungen gehören Schulung, Support, Kosten, Leistungen, Chancen udn Risiken; zu den technischen Anforderungen gehören Uptime, Reaktionszeit, Sicherheit, Unterstützung von bekannten Technologien usw. 
+							<h4 class="text-info mt-2 ml-4">Develop a detailed operational concept, as candidate solutions are identified and product component solutions are selected by the supplier, that defines the intraction of the product, the end user, and the environment, and that satisfies operational, maintenance, support, and disposal needs</h4>
+							<span class="text-danger">//TODO</span>
 						</div>
 					</div>
 				</div>

@@ -514,7 +514,7 @@ p.file-icon>span{
 th{
 	text-align: center;
 }
-tr:nth-child(odd) {background: #eeecec}
+tr:nth-child(odd) {background: #efeff9}
 table{
 	 border-color: transparent;
 	 margin: auto;
