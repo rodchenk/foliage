@@ -71,7 +71,7 @@
 							</span>
 						</div>
 					</div>
-					<div class="col-md-4 text-center">
+					<div class="col-md-4 text-center" onclick="window.location = 'https://rodchenk.github.io/elegia/'">
 						<div class="blue-block">
 							<img src="github/blue-icon-1.png" class="img-fluid d-block">
 							<span class="text-white block-label">
@@ -431,6 +431,11 @@
 							Aus Sicht des Anwendungsentwicklers führt die Service-API sowohl die Ressourcenserverrolle als auch die Autorisierungsserverrolle aus.
 							<br><b>Client: externer Service</b><br>
 							Applikation bzw. Dienst, die auf das Benutzerkonto zugreifen, muss vor dem Zugriff vom Benutzer autorisiert werden und die Autorisierung muss von der API kontrolliert werden.
+							<a href="github/OAUTH UND AUTORISIERUNGSMODULE IN Service Oriented Architecture.pdf">
+								<p class="file-icon">
+									<span>OAuth und Autorisierungsmodule.pdf</span>
+								</p>
+							</a>
 							<hr>
 							Die OAuth unterscheidet sich in vier verschiedene Rollen<br>
 							<ul>
@@ -600,7 +605,7 @@
 							<b>
 								&#60;redirect_uri&#62;?access_token=&#60;access_token&#62;&refresh_token=&#60;refresh_token&#62;&expires_at=86400&name=&#60;name&#62;&photo=&#60;photo_url&#62;
 							</b>
-							Der generierte Token ist 86400s gültig, danach muss sich der Benutzer entweder neu anmelden oder die Client-Applikation kann das automation mithilfe von <b>refresh_token</b>
+							Der generierte Token ist 86400s gültig, danach muss sich der Benutzer entweder neu anmelden oder die Client-Applikation kann das automatisch mithilfe von <b>refresh_token</b>
 							durchführen. Die automatische Verlängerung von <b>access_token</b> kann durch den Aufruf von der Methode api.foliage.com/prolongate durchgeführt werden. Die Anfrage an
 							API soll folgendermaßen aussehen: <br>
 							<b>
