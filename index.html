@@ -111,6 +111,9 @@
 						<span id="auavid-ssad-bar" onclick="scrollToDiv(this, 'auavid-ssad-content')">
 							<i class="fas fa-bolt"></i> SSAD und ARD
 						</span>
+						<span id="auavid-ahp-bar" onclick="scrollToDiv(this, 'auavid-ahp-content')">
+							<i class="fas fa-box-open"></i> AHP
+						</span>
 					</div>
 				</div>
 			</div>
@@ -385,6 +388,35 @@
 							<h4 class="text-info mt-2 ml-4">Review operational concepts and scanarios to refine and discover requirements</h4>
 							Das Betriebskonzept wurde überprüft und darauf bezogen wurde eine Liste von Anforderungen erfasst. Dies enthält organisatorische sowie technische Anforderungen. Zu den organisatorischen und finanziellen Anforderungen gehören Schulung, Support, Kosten, Leistungen, Chancen udn Risiken; zu den technischen Anforderungen gehören Uptime, Reaktionszeit, Sicherheit, Unterstützung von bekannten Technologien usw. 
 							<h4 class="text-info mt-2 ml-4">Develop a detailed operational concept, as candidate solutions are identified and product component solutions are selected by the supplier, that defines the intraction of the product, the end user, and the environment, and that satisfies operational, maintenance, support, and disposal needs</h4>
+							
+							Das Betriebskonzept wird in folgende Aspekte unterteilt:
+							<ul style="list-style-type: none;">
+								<li><span class="badge badge-primary badge-pill">1</span> Erklärung des System und ihre Ziele</li>
+								<li><span class="badge badge-primary badge-pill">2</span> Strategien, Taktiken, Richtlinien und Einschränkungen, die das System beeinflußen</li>
+								<li><span class="badge badge-primary badge-pill">3</span> Zuständigkeitserklärung und delegierte Befugnisse</li>
+								<li><span class="badge badge-primary badge-pill">4</span> Prozesse zur Initiierung, Entwicklung und Wartung des Systems</li>
+							</ul>
+							Beim System handelt es sich um eine Cloud-basierte Entwicklungs- und Produktionsumgebung. Das System besitzt mehrere Nutzungsszenarien und wird zum Entwickeln, Testen, Demonstrieren und zur Releasefreigabe verwendet. Es wird eine klare Trennung zwischen den Nutzungszenarien gefordert um die maximale Sicherheit von Benutzerdaten sowie die Sicherung von Source code und dessen Versionen beschaffen zu können.
+							<div class="row mt-2"></div>
+							Das System muss rund um die Uhr zur Verfügung stehen und es muss möglichst wenig Ausfälle geben. Darüber hinaus muss noch das Backup-System das planmäßige Datensicherung gewährleisten. Die Entwicklungsumgebung wird nur für die Entwickler, Testentwicklung für Tester und Entwickler und Backupsystem für Techlead und IT-Administrator zur Verfügung gestellt, um keine technischen Konflikte zu auszulösen. 
+							<div class="row mt-2"></div>
+							Die Gesamte Verantwortlichkeit für das System trägt der Techlead, der IT-Architekt ist für eventuelle Abweichungen im Plan verantwortlich und soll mit dem Techlead alle beeinflüßsten Merkmale besprechen. Allen anderen Beteiligten wird eine exakte Rolle zugeordnet, die dann dem System dabei hilft, die Autorisierungsrechte des Benutzers feststellen zu können. 
+							<div class="row mt-2"></div>
+							Das aktuelle System muss schrittweise in die neue Umgebung überführt werden. Dafür wird eine von Techlead zu bestimmende Deployment-Strategie verwendet. Diese wird je nach Cloud-Anbieter vor Ort geklärt. Auf der Entwicklungsumgebung muss die Hauptanwendung in einzelne Dienste (Microservices) extrahiert werden. Dafür wurde eine detalierte Refactoring-Strategie entwickelt. Die Wartung des Systems betrifft insbesondere die Entwickler, dabei handelt es sich um saubere und fehlerfreie Enwicklung. Die Richlinien für die Entwicklungs werden in Confluence(oder in einer alternativen Umgebung) erfasst. Das Logging, Automatisierung und Integration von einzelnen Modulen ins System wird mit Jenkins (<a href="https://en.wikipedia.org/wiki/Jenkins_(software)">Wikipedia</a>) erfolgen. Damit kann auch der Status jeder Umgebung verfolgt werden. Falls es Konflikte oder Fehler auftreten, ist der Techlead für das Fixen verantwortlich. Im weiteren Verlauf soll noch Security Manager eingestellt werden. Er wird die Verantwortung für Sicherheit und das Security Compliance tragen.
+						</div>
+					</div>
+				</div>
+				<div class="row border-bottom" id="auavid-ahp-content">
+					<div class="col-12">
+						<span class="content-topic">
+							<h2 class="d-inline-block"><a href="#" target="blanc">Analytic Hierarchy Process</a></h2>
+							<span class="ml-2 info">Info</span>
+							<span class="ml-2 aufgabe">Aufgabe</span>
+							<span class="last-updated float-right">
+								aktualisiert am <b>26.11.2018</b>
+							</span>
+						</span>
+						<div class="content-body">
 							<span class="text-danger">//TODO</span>
 						</div>
 					</div>

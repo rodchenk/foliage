@@ -21,6 +21,10 @@ $(window).ready(function(){
 			"link"	: "auavid-ssad-bar"
 		},
 		{
+			"block" : "auavid-ahp-content",
+			"link"	: "auavid-ahp-bar"
+		},
+		{
 			"block" : "dsus-team-content",
 			"link"	: "dsus-team-bar"
 		},
