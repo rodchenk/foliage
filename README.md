@@ -8,7 +8,7 @@ https://rodchenk.github.io/foliage/
 
 Thema
 
-	Umstieg auf Micro-Service Architecture/ Source code verwaltung
+	Umstieg auf Micro-Service Architecture und das Deployen von Microservices im Cloud
 
 Teammitglieder
 
